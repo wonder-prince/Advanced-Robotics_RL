@@ -1,0 +1,4 @@
+gymnasium[box2d]>=1.2,<1.4
+stable-baselines3>=2.7,<3
+huggingface-sb3>=3,<4
+moviepy>=2,<3
