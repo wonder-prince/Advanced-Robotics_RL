@@ -1,0 +1,11 @@
+[project]
+name = "stage1-vizdoom-ppo"
+version = "0.1.0"
+description = "机器人进阶 Stage1：ViZDoom Health Gathering Supreme"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "sample-factory[vizdoom]==2.1.1",
+]
+
+[tool.uv]
+package = false

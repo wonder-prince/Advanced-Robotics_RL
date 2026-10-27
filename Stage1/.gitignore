@@ -1,0 +1,6 @@
+.venv/
+**/.venv/
+**/__pycache__/
+**/outputs/
+**/train_dir/
+**/.ruff_cache/
