@@ -2,6 +2,9 @@
 
 from __future__ import annotations
 
+if __name__ == "__main__":
+    print("正在加载 Gymnasium、PyTorch 和训练库，请稍候…", flush=True)
+
 import argparse
 import json
 from pathlib import Path
@@ -44,6 +47,7 @@ def train(args: argparse.Namespace) -> None:
     if args.batch_size <= 0 or args.batch_size > args.n_envs * args.rollout_steps:
         raise ValueError("batch-size 必须在 1 和 n-envs × rollout-steps 之间")
 
+    print(f"依赖已加载，正在创建 {args.n_envs} 个环境…", flush=True)
     env = make_vec_env(ENV_ID, n_envs=args.n_envs, seed=args.seed)
     try:
         # 与课程解答一致；MlpPolicy 接收 LunarLander 的 8 维向量观测。
@@ -60,6 +64,7 @@ def train(args: argparse.Namespace) -> None:
             device="cpu",
             verbose=1,
         )
+        print("环境和 PPO 模型已就绪，开始收集经验并训练…", flush=True)
         model.learn(total_timesteps=args.timesteps)
         model_path = Path(args.model).expanduser().resolve()
         model_path.parent.mkdir(parents=True, exist_ok=True)

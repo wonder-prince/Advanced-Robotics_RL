@@ -64,6 +64,8 @@ python lunar_lander.py train --timesteps 1000000 --n-envs 16
 python lunar_lander.py train --timesteps 64 --n-envs 1 --rollout-steps 32 --batch-size 32
 ```
 
+启动后会先提示加载 Gymnasium、PyTorch 和训练库，再提示创建环境与开始训练。首次加载依赖可能比这 64 步训练还慢；看到“开始收集经验并训练”后，才算真正进入训练阶段。如果几分钟后仍只看到第一条提示，可以按 `Ctrl+C` 停止，再用 `python -u lunar_lander.py train ...` 重试，并保留终端报错供排查。模型只有在训练结束时才会保存。
+
 完整训练的得分会随随机种子、依赖版本和机器变化，不能保证一次就达到 200 分。
 
 ## 6. 用独立环境评估
