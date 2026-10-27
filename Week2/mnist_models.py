@@ -18,17 +18,40 @@ ROOT = Path(__file__).resolve().parent
 
 
 class MNISTMLP(nn.Module):
-    """PPT 第 17 页：784 -> 64 -> 10。"""
+    """PPT 第 17 页：784 -> 64 -> 10。支持多种激活函数。"""
 
-    def __init__(self) -> None:
+    def __init__(self, activation: str = "relu") -> None:
         super().__init__()
         self.linear1 = nn.Linear(784, 64)
-        self.activation = nn.ReLU()
         self.linear2 = nn.Linear(64, 10)
+        
+        # 支持的激活函数
+        activations = {
+            "relu": nn.ReLU(),
+            "sigmoid": nn.Sigmoid(),
+            "tanh": nn.Tanh(),
+            "leaky_relu": nn.LeakyReLU(0.1),
+            "elu": nn.ELU(),
+            "selu": nn.SELU(),
+            "gelu": nn.GELU(),
+            "silu": nn.SiLU(),  # Swish
+            "mish": nn.Mish(),
+            "softplus": nn.Softplus(),
+        }
+        
+        if activation not in activations:
+            raise ValueError(f"Unknown activation: {activation}. Choose from: {list(activations.keys())}")
+        
+        self.activation_fn = activations[activation]
+        self.activation_name = activation
 
     def forward(self, images: torch.Tensor) -> torch.Tensor:
         x = images.reshape(-1, 784)
-        return self.linear2(self.activation(self.linear1(x)))
+        x = self.activation_fn(self.linear1(x))
+        return self.linear2(x)
+    
+    def extra_repr(self) -> str:
+        return f"activation={self.activation_name}"
 
 
 class MNISTCNN(nn.Module):
@@ -83,6 +106,9 @@ class MNISTGRU(nn.Module):
 
 MODELS = {"mlp": MNISTMLP, "cnn": MNISTCNN, "lstm": MNISTLSTM, "gru": MNISTGRU}
 
+# MLP 激活函数选项
+MLP_ACTIVATIONS = ["relu", "sigmoid", "tanh", "leaky_relu", "elu", "selu", "gelu", "silu", "mish", "softplus"]
+
 
 def choose_device(requested: str) -> torch.device:
     if requested != "auto":
@@ -112,12 +138,19 @@ def train_model(
     learning_rate: float,
     device: torch.device,
     output_dir: Path,
+    activation: str = "relu",
 ) -> list[dict]:
-    model = MODELS[name]().to(device)
+    # MLP 使用指定的激活函数
+    if name == "mlp":
+        model = MODELS[name](activation=activation).to(device)
+        model_name = f"mlp_{activation}"
+    else:
+        model = MODELS[name]().to(device)
+        model_name = name
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
     loss_function = nn.CrossEntropyLoss()
     history = []
-    print(f"\n=== Running {name.upper()} ===")
+    print(f"\n=== Running {model_name.upper()} (activation={activation}) ===")
 
     for epoch in range(1, epochs + 1):
         model.train()
@@ -158,8 +191,8 @@ def train_model(
         )
 
     output_dir.mkdir(parents=True, exist_ok=True)
-    torch.save(model.state_dict(), output_dir / f"mnist_{name}.pt")
-    (output_dir / f"mnist_{name}_metrics.json").write_text(
+    torch.save(model.state_dict(), output_dir / f"mnist_{model_name}.pt")
+    (output_dir / f"mnist_{model_name}_metrics.json").write_text(
         json.dumps(history, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     return history
@@ -168,6 +201,9 @@ def train_model(
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", choices=[*MODELS, "all"], default="all")
+    parser.add_argument("--activation", default="relu", 
+                        choices=MLP_ACTIVATIONS,
+                        help="MLP 激活函数类型")
     parser.add_argument("--epochs", type=int, default=3)
     parser.add_argument("--batch-size", type=int, default=64)
     parser.add_argument("--validation-batch-size", type=int, default=1000)
@@ -199,6 +235,7 @@ def main() -> None:
             args.learning_rate,
             device,
             args.output_dir,
+            activation=args.activation,
         )
 
 

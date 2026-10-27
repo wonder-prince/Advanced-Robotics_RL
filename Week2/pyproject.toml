@@ -4,11 +4,15 @@ version = "0.1.0"
 description = "第 2 周深度学习基本原理实践：PyTorch、函数拟合和 MNIST"
 requires-python = ">=3.11,<3.13"
 dependencies = [
-    "torch>=2.4,<3",
+    "torch==2.5.1+cu121",
     "numpy>=1.26,<3",
     "matplotlib>=3.8,<4",
     "requests>=2.31,<3",
 ]
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
 
 [tool.uv]
 package = false

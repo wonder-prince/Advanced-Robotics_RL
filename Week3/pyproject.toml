@@ -9,10 +9,14 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-reinforce = ["torch>=2.4,<3"]
-flappy = ["torch>=2.4,<3", "flappy-bird-gymnasium>=0.4,<1"]
+reinforce = ["torch==2.5.1+cu121"]
+flappy = ["torch==2.5.1+cu121", "flappy-bird-gymnasium>=0.4,<1"]
 panda = ["stable-baselines3>=2.4,<3", "panda-gym>=3,<4"]
 atari = ["rl-zoo3>=2.4,<3", "ale-py>=0.11,<1"]
+
+[[tool.uv.index]]
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
 
 [tool.uv]
 package = false
