@@ -1,0 +1,7 @@
+# 课件参考依赖；本次只提供代码，不安装。
+mujoco==2.2.0
+gym==0.25.2
+torch==1.12.1
+tensorboard==2.10.0
+opencv-python==4.6.0.66
+numpy
