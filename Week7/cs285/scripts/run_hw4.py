@@ -260,6 +260,13 @@ def run_training_loop(
                 video_title="eval_rollouts",
             )
 
+    # Keep final weights so evaluation can be reproduced after training.
+    if mb_agent is not None:
+        torch.save(mb_agent.state_dict(), os.path.join(logger._log_dir, "final_dynamics.pt"))
+    if sac_config is not None:
+        torch.save(sac_agent.state_dict(), os.path.join(logger._log_dir, "final_sac.pt"))
+    logger.flush()
+
 
 def main():
     parser = argparse.ArgumentParser()

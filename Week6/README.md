@@ -1,6 +1,6 @@
 # 第 6 周：离线强化学习实践
 
-依据《第6周-深度强化学习拓展-离线强化学习实践.pptx》整理。代码以 [Berkeley CS285 Fall 2023 HW5](https://github.com/berkeleydeeprlcourse/homework_fall2023/tree/f401a13ce9139d633c1d242c2557ae29506a7e05/hw5) 的 MIT 许可练习骨架为基础，补全课件中的算法 TODO 和离线到在线训练流程，并修正会阻断实验的轨迹采样与输出路径问题。原许可见 [`LICENSE`](LICENSE)。**本次没有安装依赖，也没有运行代码、训练或评估。**
+依据《第6周-深度强化学习拓展-离线强化学习实践.pptx》整理。代码以 [Berkeley CS285 Fall 2023 HW5](https://github.com/berkeleydeeprlcourse/homework_fall2023/tree/f401a13ce9139d633c1d242c2557ae29506a7e05/hw5) 的 MIT 许可练习骨架为基础，补全课件中的算法 TODO 和离线到在线训练流程，并修正会阻断实验的轨迹采样与输出路径问题。原许可见 [`LICENSE`](LICENSE)。uv 环境已准备好，并完成 Pointmass Easy 的缩短训练与评估。
 
 ## 内容对应
 
@@ -17,7 +17,7 @@ RND 的 `rnd_bonus_normalization` 支持 `none`、`mean_std` 和 `zfilter`，对
 
 ## 后续使用顺序
 
-以下命令仅供以后运行时参考，**本次没有执行**。所有命令从 `Week6` 目录发起。`requirements.txt` 记录课件依赖版本，并补上 Pointmass 用到的 NumPy 与 NetworkX；没有执行安装。
+以下是训练命令示例。所有命令从 `Week6` 目录发起，可将开头的 `python` 改为 `uv run --frozen --offline python`。`requirements.txt` 记录课件参考版本，实际 uv 环境以 `pyproject.toml` 和 `uv.lock` 为准。已完成的缩短训练见 [实验报告](../results/week5-7/README.md)。
 
 ### 1. 收集离线数据
 
@@ -71,4 +71,4 @@ python cs285/scripts/run_hw5_finetune.py \
 
 - 离线训练与微调读取本目录探索脚本生成的 `datasets/*.pkl`；PPT 没有附上这些数据，因此没有伪造数据文件。
 - `datasets/`、实验日志、覆盖图和权重已在 `Week6/.gitignore` 排除。
-- 课件的依赖版本较旧，实际运行需要匹配的 Python 环境；本次未验证运行兼容性或训练效果。
+- 当前 uv 环境使用 Python 3.10；已验证依赖导入、Pointmass 环境创建和缩短训练流程，完整课件训练效果尚未验证。

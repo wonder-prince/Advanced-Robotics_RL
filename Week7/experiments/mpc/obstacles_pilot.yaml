@@ -1,0 +1,15 @@
+env_name: obstacles-cs285-v0
+exp_name: obstacles_pilot
+base_config: mpc
+num_layers: 2
+hidden_size: 64
+ensemble_size: 3
+num_iters: 3
+initial_batch_size: 1000
+batch_size: 200
+train_batch_size: 128
+num_agent_train_steps_per_iter: 40
+num_eval_trajectories: 2
+mpc_horizon: 5
+mpc_num_action_sequences: 64
+mpc_strategy: random

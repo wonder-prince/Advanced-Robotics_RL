@@ -20,7 +20,7 @@
 | 5 CEM 与随机采样 | `halfcheetah_cem.yaml` 对比 `halfcheetah_multi_iter.yaml` |
 | 6 MBPO / 长 rollout / 模型自由 SAC | `halfcheetah_mbpo.yaml` 搭配 `halfcheetah_clipq.yaml`、`halfcheetah_long_rollout.yaml` 或 `halfcheetah_model_free.yaml` |
 
-在 `Week7` 目录中，命令形式如下；本次交付没有执行这些命令：
+在 `Week7` 目录中，训练命令形式如下；可将开头的 `python` 改为 `uv run --frozen --offline python`。已完成的缩短训练见 [实验报告](../results/week5-7/README.md)：
 
 ```bash
 python cs285/scripts/run_hw4.py --config_file experiments/mpc/halfcheetah_multi_iter.yaml
@@ -29,4 +29,4 @@ python cs285/scripts/run_hw4.py --config_file experiments/mpc/halfcheetah_mbpo.y
 python cs285/scripts/run_hw4.py --config_file experiments/mpc/halfcheetah_mbpo.yaml --sac_config_file experiments/sac/halfcheetah_model_free.yaml
 ```
 
-运行前需要满足 [requirements.txt](requirements.txt) 中的依赖和 MuJoCo 环境。训练日志与曲线会写到 `Week7/data/`。本次没有安装依赖、启动训练或生成实验结果。
+当前 uv 环境已按 `pyproject.toml` 和 `uv.lock` 同步，缩短训练已生成日志和曲线到 `Week7/data/`，可提交的结果见 [实验报告](../results/week5-7/README.md)。

@@ -31,7 +31,7 @@ cs285/expert_data/expert_data_Walker2d-v4.pkl
 
 ## 后续运行方式
 
-以下仅作使用说明，**本次没有执行**。在 `Week5/imitation_learning` 下运行，将 `Ant` 换成其他课件任务名即可：
+以下为训练命令示例。在 `Week5/imitation_learning` 下运行，将 `Ant` 换成其他课件任务名即可；可将命令开头的 `python` 改为 `uv run --frozen --offline python`。已完成的 Hopper 训练结果见 [实验报告](../../results/week5-7/README.md)：
 
 ```bash
 python cs285/scripts/run_hw1.py \
@@ -47,6 +47,6 @@ python cs285/scripts/run_hw1.py \
   --video_log_freq -1 --save_params
 ```
 
-`requirements.txt` 记录课件中的参考版本，没有安装。若以后启用视频记录，可将 `--video_log_freq` 设为正数，并让环境支持 `rgb_array` 渲染。输出的 TensorBoard 标量包括训练损失、评估回报均值与标准差、轨迹长度等。
+`requirements.txt` 记录课件中的参考版本；当前 uv 环境按 `pyproject.toml` 和 `uv.lock` 配置。若以后启用视频记录，可将 `--video_log_freq` 设为正数，并让环境支持 `rgb_array` 渲染。输出的 TensorBoard 标量包括训练损失、评估回报均值与标准差、轨迹长度等。
 
 本练习的结构和输入格式依据 [Berkeley CS285 Homework 1](https://github.com/berkeleydeeprlcourse/homework_fall2023/tree/main/hw1)；这里的实现已补全课件所列 TODO，并保留 [原项目 MIT 许可](https://github.com/berkeleydeeprlcourse/homework_fall2023/blob/main/LICENSE)的来源说明。

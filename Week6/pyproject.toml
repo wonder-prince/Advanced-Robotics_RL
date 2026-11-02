@@ -1,0 +1,36 @@
+[project]
+name = "week6-offline-rl-practice"
+version = "0.1.0"
+description = "第 6 周离线强化学习实践：Pointmass 探索、DQN/CQL/AWAC/IQL、在线微调"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    # 课件版本；mujoco 2.2.0 没有 cp311 的 Windows wheel，因此锁定 Python 3.10。
+    "gym==0.25.2",
+    "mujoco==2.2.0",
+    # gym 0.25.2 使用了 numpy 1.24 中被移除的 np.bool8，必须锁在 1.23.x。
+    "numpy==1.23.5",
+    "networkx==2.8.8",
+    "torch==2.5.1+cu121",
+    "tensorboardX==2.5.1",
+    "matplotlib==3.7.5",
+    "pillow<10",
+    "opencv-python==4.9.0.80",
+    "tqdm==4.66.1",
+    "pyyaml==6.0.1",
+    # gym.envs.mujoco 的渲染模块会 import imageio。
+    "imageio==2.34.0",
+    "imageio-ffmpeg==0.5.1",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu121" }
+
+[tool.uv]
+package = false
+# cu121 索引只提供 Windows / Linux 的 torch wheel，限定解析平台避免拉取失败。
+environments = ["sys_platform == 'win32'"]
