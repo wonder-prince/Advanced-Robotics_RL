@@ -1,0 +1,5 @@
+# uv 全局配置
+# 把缓存放到 D 盘，避免 C 盘被 torch / mujoco 等大 wheel 撑满。
+cache-dir = "D:\\uv_cache"
+# Windows 上默认的 hardlink 跨盘不可用，改为复制模式。
+link-mode = "copy"
