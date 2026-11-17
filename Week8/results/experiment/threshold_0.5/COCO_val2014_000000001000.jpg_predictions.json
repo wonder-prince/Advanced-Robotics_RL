@@ -1,0 +1,65 @@
+{
+  "image": "/Users/interstellar/Documents/vsc/Advanced-Robotics_RL/Week8/CenterMask-master/demo/images/COCO_val2014_000000001000.jpg",
+  "threshold": 0.5,
+  "inference_ms": [
+    149.86704099283088,
+    146.5353329986101,
+    146.43258300202433
+  ],
+  "instances": [
+    {
+      "bbox_xyxy": [
+        118.87080383300781,
+        145.8878936767578,
+        198.28662109375,
+        386.8256530761719
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.5693880319595337,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "f^h1?]>5M3N2N3M3M3N2M2N3M4L2O1N2O1N2N2O2M5]ChNU;h2I9RF\\Ln7Y4UGYLb8U5M2N1O1O1N1]OUJlGR6l7e0M2O1O01O101BPHiIR8`5S1H8J6H8L401N11O5L6I3N5K5J3N5J:G8H7J2NOl0UOO00O2N1O1jMoF[NS9\\1PHfMS8U2cHWM`7a1PGeNi1B\\7a1f3M31O0000M4L4K7Emk`6"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        515.2586059570312,
+        189.82803344726562,
+        636.4188842773438,
+        475.21026611328125
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.5572429299354553,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "`od77a>c0ZBJg0]O_9Y1SEK8lNa02Q:P3mERMo9S3nEoLn9U3QFlLk9X3TFiLi9Z3UFiL=JS8a3[GlL=IQ8b4kG`KR8c4kG_KT8d4iG]KV8e4hG\\KX8e4gG[KX8f4gG[KY8i4bGXK]8n4]GSKb8e501N2N2OO2M20`NUJlIk5S6[JhId5Y6bJaI\\5`6mJXIR5i6b1O1O3N1O101N101N3N1N2N2N3L3M3O1N2O1N2O001O000000O1O1M3L4002N1O1O1O1O1O0000M3M3M3bN^11bHbIY6`6XIUJ_6[7L[IdIU21]NX6SOSJ\\2I`NT6QOVJ\\2IbNS6nNWJ^2HcNR6kNZJ`2FdNQ6iN\\Ja2DgNP6eN_Jc2AhNR6aN_Jh2]OhNU6]NaJj2YOkNX6VNbJn2UOmN\\6PNbJS3QOmNb6cMgJ_3fNnN[8R1cGoN^8Q1aGoN_8Q1aGoN_8Q1`GPOa8o0_GQOa8m0`GSOa8g0eGYO\\8f0^G@c8^32N2N1N2O1QMYGCg8<\\GBe8<\\GDe8;ZGFg8:WGGj88UGJk86RGLo82RGNQ9NQG1P9NPG2R9JQG5P9IQG7P9GQG9Q9BRG=Q9_ORG`0R9ZOPGf0W9nNWGnN3LXk1"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        412.4873046875,
+        214.48818969726562,
+        523.8328857421875,
+        474.732177734375
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.538020133972168,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "kYR6f0V>7K5J50NfCXOg:GSD5W1:S;AmDj0_<j0VO;E:F4J7^N[MfFg2l8kMWGh1\\8gNgGT1U8QOlGl0S8TOYHb0g7\\OTHk0k7TOUHm0l7POUHR1k7mNRHV1o7hNoGZ1S8cNlG`1V8\\N]GR2g8jMWGY2j8eMWG\\2j8aMVG`2l8]MUGc2m8ZMoFl2U9mLWFj3Y:8L>C3N1N2O1O2Mb0_O3M2L3L4L4L5K5POo0B=N3N1O2N1O1O1N2O1O1O10000O100000000000O100O1O1L4L5L3N2N2N2M3L4K5M4M2N2M3L5J6QK]GZ3i8^LbGU3i8eL_GQ3h8kL^Gn2g8oL\\Gn2h8lL^Gm2i8nL\\Gk2n8nLUGP3`:L3O1N1O2O1N2N2N3M3B?J6J5J8E<QOR`g1"
+      }
+    }
+  ]
+}

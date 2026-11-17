@@ -1,0 +1,10 @@
+image,threshold,detections,inference_ms,class_counts,output_image
+COCO_val2014_000000000885.jpg,0.1,23,165.06093066709582,"{""bird"": 1, ""chair"": 1, ""person"": 18, ""sports ball"": 1, ""tennis racket"": 2}",threshold_0.1/COCO_val2014_000000000885.jpg_result.png
+COCO_val2014_000000000885.jpg,0.5,2,162.19354200196298,"{""person"": 2}",threshold_0.5/COCO_val2014_000000000885.jpg_result.png
+COCO_val2014_000000000885.jpg,0.9,0,167.34240266669076,{},threshold_0.9/COCO_val2014_000000000885.jpg_result.png
+COCO_val2014_000000001000.jpg,0.1,50,151.03372232988477,"{""backpack"": 5, ""baseball bat"": 1, ""baseball glove"": 1, ""bottle"": 1, ""handbag"": 12, ""person"": 24, ""tennis racket"": 4, ""tie"": 2}",threshold_0.1/COCO_val2014_000000001000.jpg_result.png
+COCO_val2014_000000001000.jpg,0.5,3,147.6116523311551,"{""person"": 3}",threshold_0.5/COCO_val2014_000000001000.jpg_result.png
+COCO_val2014_000000001000.jpg,0.9,0,146.9286666736783,{},threshold_0.9/COCO_val2014_000000001000.jpg_result.png
+COCO_val2014_000000005477.jpg,0.1,8,182.18629166464476,"{""airplane"": 6, ""car"": 2}",threshold_0.1/COCO_val2014_000000005477.jpg_result.png
+COCO_val2014_000000005477.jpg,0.5,0,171.56552766391542,{},threshold_0.5/COCO_val2014_000000005477.jpg_result.png
+COCO_val2014_000000005477.jpg,0.9,0,174.41541699614996,{},threshold_0.9/COCO_val2014_000000005477.jpg_result.png

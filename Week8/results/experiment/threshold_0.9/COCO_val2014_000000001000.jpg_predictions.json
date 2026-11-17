@@ -1,0 +1,10 @@
+{
+  "image": "/Users/interstellar/Documents/vsc/Advanced-Robotics_RL/Week8/CenterMask-master/demo/images/COCO_val2014_000000001000.jpg",
+  "threshold": 0.9,
+  "inference_ms": [
+    145.32470901031047,
+    147.60758299962617,
+    147.8537080110982
+  ],
+  "instances": []
+}

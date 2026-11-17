@@ -1,0 +1,911 @@
+{
+  "image": "/Users/interstellar/Documents/vsc/Advanced-Robotics_RL/Week8/CenterMask-master/demo/images/COCO_val2014_000000001000.jpg",
+  "threshold": 0.1,
+  "inference_ms": [
+    148.18874999764375,
+    158.569291990716,
+    146.34312500129454
+  ],
+  "instances": [
+    {
+      "bbox_xyxy": [
+        118.87080383300781,
+        145.8878936767578,
+        198.28662109375,
+        386.8256530761719
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.5693880319595337,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "f^h1?]>5M3N2N3M3M3N2M2N3M4L2O1N2O1N2N2O2M5]ChNU;h2I9RF\\Ln7Y4UGYLb8U5M2N1O1O1N1]OUJlGR6l7e0M2O1O01O101BPHiIR8`5S1H8J6H8L401N11O5L6I3N5K5J3N5J:G8H7J2NOl0UOO00O2N1O1jMoF[NS9\\1PHfMS8U2cHWM`7a1PGeNi1B\\7a1f3M31O0000M4L4K7Emk`6"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        515.2586059570312,
+        189.82803344726562,
+        636.4188842773438,
+        475.21026611328125
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.5572429299354553,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "`od77a>c0ZBJg0]O_9Y1SEK8lNa02Q:P3mERMo9S3nEoLn9U3QFlLk9X3TFiLi9Z3UFiL=JS8a3[GlL=IQ8b4kG`KR8c4kG_KT8d4iG]KV8e4hG\\KX8e4gG[KX8f4gG[KY8i4bGXK]8n4]GSKb8e501N2N2OO2M20`NUJlIk5S6[JhId5Y6bJaI\\5`6mJXIR5i6b1O1O3N1O101N101N3N1N2N2N3L3M3O1N2O1N2O001O000000O1O1M3L4002N1O1O1O1O1O0000M3M3M3bN^11bHbIY6`6XIUJ_6[7L[IdIU21]NX6SOSJ\\2I`NT6QOVJ\\2IbNS6nNWJ^2HcNR6kNZJ`2FdNQ6iN\\Ja2DgNP6eN_Jc2AhNR6aN_Jh2]OhNU6]NaJj2YOkNX6VNbJn2UOmN\\6PNbJS3QOmNb6cMgJ_3fNnN[8R1cGoN^8Q1aGoN_8Q1aGoN_8Q1`GPOa8o0_GQOa8m0`GSOa8g0eGYO\\8f0^G@c8^32N2N1N2O1QMYGCg8<\\GBe8<\\GDe8;ZGFg8:WGGj88UGJk86RGLo82RGNQ9NQG1P9NPG2R9JQG5P9IQG7P9GQG9Q9BRG=Q9_ORG`0R9ZOPGf0W9nNWGnN3LXk1"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        412.4873046875,
+        214.48818969726562,
+        523.8328857421875,
+        474.732177734375
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.538020133972168,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "kYR6f0V>7K5J50NfCXOg:GSD5W1:S;AmDj0_<j0VO;E:F4J7^N[MfFg2l8kMWGh1\\8gNgGT1U8QOlGl0S8TOYHb0g7\\OTHk0k7TOUHm0l7POUHR1k7mNRHV1o7hNoGZ1S8cNlG`1V8\\N]GR2g8jMWGY2j8eMWG\\2j8aMVG`2l8]MUGc2m8ZMoFl2U9mLWFj3Y:8L>C3N1N2O1O2Mb0_O3M2L3L4L4L5K5POo0B=N3N1O2N1O1O1N2O1O1O10000O100000000000O100O1O1L4L5L3N2N2N2M3L4K5M4M2N2M3L5J6QK]GZ3i8^LbGU3i8eL_GQ3h8kL^Gn2g8oL\\Gn2h8lL^Gm2i8nL\\Gk2n8nLUGP3`:L3O1N1O2O1N2N2N3M3B?J6J5J8E<QOR`g1"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        209.12869262695312,
+        173.10125732421875,
+        286.2455749511719,
+        409.80712890625
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.47957879304885864,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "dVR3e0Q>c0D4L4L4_OdNXC`1f<>O1hCmMc;T2[DoMb;R2]DQNb;j2M\\MSEU1k:fN[EZ1e:fNZEZ1f:gNZEX1g:gNXE\\1g:_N\\EW2HeMN<Z8^4RGiKm8U50kJnF]4R9`KUG[4j8n0ROVJfHj5T7aJfH`5V7gJfHZ5X7nJaHS5\\7WK]Hi4a7[1010ZO]HnIe7h5hHSJY7j5o001O1O1N2N2L4N3N1N2L4H8L4M4M210O1O100010`GWKf6l4]HVKB;P8X61M6J2M1O100OO10aJbG\\4^8bKgG=1Z2Y8YMeGKm0c2^7dMdIX2^6oM]Io0XN^N]8e0cI`0UNhNZ8g0dI;WNjNV8e0lI;SNmNS8?[L]Og3<mfX5"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        333.4960021972656,
+        155.17213439941406,
+        412.6875915527344,
+        467.5703125
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.4770921468734741,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "Pjm4g0[3\\OS7j1RH\\NX7c2YHbMT7T3eHPMU7W3fHkLW7[3dHfLX7a3dH`LX7f3dH\\LR7o3lHSLl6U4RImKf6[4YIeK]6g4`IZK^6k4^IVK`6n4]ISKa6R5[IPKc6U5XIlJf6^5oHeJm6i6M3O1O100O1O1O1M3N2O0O2TOl0J6L3O110O101OO100000O2O0000O100O1O2L3M3L4YOg0L4M3L4hMaI[KS7^4mI\\J`6b5`1L4K6E;H8J8J7H9PLjEf2^;B=H9F<C=]O`0K4M3N3HTc[3"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        269.5689392089844,
+        99.30660247802734,
+        355.0505065917969,
+        420.3072814941406
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.4313523471355438,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "egn3m0o=8kGQOm1V1oMlNm1\\1mMfNQ2`1iMbNU2e1eM[NZ2j1bMWN\\2m1PJSNh1OX4f2QIhMb2B[4R4cKlK\\4W4cKhK]4[4aKdK_4a4[K_Kf4d4SKYKT5i4kJUKV5m4hJSKX5Q5dJPKZ5`5UJdJh5l5cI[J[6k5^IWJb6m5[IRJe6R6WImIj6Z6nHdIU7R71000TOdHSJ]7d5o04O2N3N1O2M3M3L4N2\\OXIlHl6P7d0O100O11O2N2N2Nk0UO5lIkGS5[8bJlG\\5W8aJjG^5Y8^JhGb5Y8]JgGc5Y8]JgGc5Y8^JeGc5[8_JbGb5]8a0O2O2J:F;Ec0ZO?C8G7H8J6G9M31O\\NgGbLW8V3XHiLc7R3bHPMbN>_7]2TJdNg5X1YKhMk4U2R4N2O2L4G9F<_O?D<K6I=@alU4"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        434.3216857910156,
+        106.5517807006836,
+        499.3539733886719,
+        228.855712890625
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.41487187147140503,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "Xo\\64`>e0C8I4N2N3M2N2jCeNd:]1[EcNe:]1\\EbNc:a1\\12O1O0O2N2O1O1N101Of0ZOb0fCPM`;Z3N00010OO2O001K4O2N101RNWDc0j;VO`Df0a;VOcDh0`;UObDj0_;SOdDl0`;bNmC4g0Y1e<01O001O001O1N2O1O00010N101O1O1O1L4L4L6AjZS2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        36.132205963134766,
+        188.2311248779297,
+        111.41229248046875,
+        392.94873046875
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.31876853108406067,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "R[e0c0X>:G6K4K5L3O3K5L3N2N2N1O2M2O3oNRNkDQ2o:WNlDl1Q;XNjDl1S;T1L2O2N2N2N2WGSL[6o3cIQL]6R4`InK`6U4\\IlKd6V4ZIjKf6W4VImKi6T4PIRLP7o3lHTLT7o3jHPLV7S4gHmKZ7U4dHjK\\7Y4`HfKb7\\4[HbKh7`4VH^Kl7c4RH]Ko7f4mGWKW8m4dGUK[8P5_GQKa8R5ZGPKf8d52O001N102O2bJRGd4j9L3M2O1oMkEROX:b0WFXOl9?`F[Oc9?dF]O`9=hF]O[9=kF@Y9;jFB]96gFG_92eFK_9OgFM_9KeF2`9BkF9V<FURh7"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        390.9129333496094,
+        161.7813262939453,
+        461.3003845214844,
+        444.8760681152344
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.3129267990589142,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "Vlj5a0>B^=c0]B_Od=?]BBc=4eBOf9>eF@k01cNc0f9BRIMSMk0T=WOjBl0^<U1[Ob0G=N6I5A36[OBVMVFj2l9WMRFk2l9WMRFk2h9`MPFZ2P:Y1O23O01M20010kGcKj5\\4mISLn5l3mI`Lm5^3VJdLf5\\3[JhLa5W3bJjL\\5U3iJhLV5W3oJfLo4o0lH5Y2jNk4o0VIKS2VOg4n0YIEV2\\Oa4o0YICU2B`4l0\\I_Oo1Nc4a0aI^Om13a4<fI_Om13\\49lICk12Y4:nIBd1;]43oIAd1?[41oI@e1d0hMaNl5^1cJ\\Oi1]1c3ZO`JXOl1a1d3VOaJYOj1c1e3QOcJ[Oh1e1e3ROaJXO_1R2P4mN[JnN^1^2X4gNjJTN6P4P5kMWLW2i3hMWLY2i3gM^L]N^MT3U6aNTOUOn0m0GRNd0f1a6J6J7H9B`0BYed2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        185.05715942382812,
+        163.6819305419922,
+        267.4594421386719,
+        401.2022399902344
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.2940629720687866,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "kag29e>3M3M3N1N2O0`N7hCLV9FiHk1Q7aNfHa1W7_NgHg1T7[NhHl1R7YNnGSOFh2W8ZNQHTO@f2[8[NSHTOSOl2h8RNUH^2j7eMRH]2m7eMQH\\2n7fMoG\\2Q8eMmGY2U8iMjGP2\\8QNdGk1c8QN^Gf1o8TNTGc1b9oM_FU1FVNP:b0\\FX1GPNP:f0ZF[1\\:cNdE^1[:dNdE\\1\\:eNcE[1]:fNcEY1]:hNcEV1^:mNaEQ1_:oNaEQ1`:dNiE\\1X:cNhE]1Y:bNhE^1X:bNiE]1X:bNiE^1V:cNnD@>Q2b:oNVE[1ObMW:X6SN2N1M4H7K5OQJSHm4l7TKUHk4j7VKUHk4j7WKTHi4j7ZKVHR4OZKj7f0VHm39UKb7P1UHg3c8XL^Gg3d8XL\\Gg3f8WL\\Gh3c8YL\\Gh3d8YL[Gg3d8ZL[Gg3e8YL[Gf3f8YL\\Ge3f8YL[Gf3e8[L[Gc3g8^LWGW3T9kLkFl2_9SMaFk2b9TM^Fj2e9UM[Fj2f9U13L5I7YOmE^LV:`3kE_LW:c1eEG5eNZ:W4L2O05gKcE_3S;L3]LjDV3]<eMSD\\OY`^5"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        17.540597915649414,
+        223.6990203857422,
+        74.45854949951172,
+        357.84771728515625
+      ],
+      "class_index": 27,
+      "class_name": "handbag",
+      "score": 0.2920839786529541,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "mV91j><E7K3M4L4L2O2M3N2M3N2M3N1O1O1N3L4M2N2N3N2N2N2N2O101OO100O2O0O1O0O2N2N3L3M3M4M4L3O0O3N5K\\BPOY=n0eBSO^=V11D_BVOd=g0_BVOf=d0]BXOi=a0c0I9HbmY8"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        357.42901611328125,
+        121.42789459228516,
+        402.6031188964844,
+        192.3679962158203
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.2808113992214203,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "\\kY51h==lBLm<=iBLQ=9iBIV=Q10@mBkNK5W=P1RCPOm<P1TCPOl<n0WCQOh<P1XCPOg<P1ZCoNg<P1[CoNd<P1g0O10O01000000O11O00000001O000100000000000O2c0^OnNeB=Z=_OiB?Z=\\OiBc0m=L3M7Hhm^3"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        403.1270751953125,
+        118.38658905029297,
+        442.4413757324219,
+        191.10397338867188
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.28057554364204407,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "oQm56f>>`ABm=j0NO]OTOPCn0n<UOPCi0Q=ZOnBe0P=@nB?Q=ElB8W=LeB5Y=i0O002O00O20OO1N3O1N2O010O100O100O101N1O2O2N3L10N1e0[O3M4K]Tm2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        413.96417236328125,
+        404.2671203613281,
+        460.7293395996094,
+        462.6201171875
+      ],
+      "class_index": 27,
+      "class_name": "handbag",
+      "score": 0.27574819326400757,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "U_R6=`>4M4L3N2M3N4L4L2O5K2N1O1O0001O010O010O10O0001O01O01O1O1O001O1N2O001O1O001N1O1N3J6J5M3M3L5Ljnc2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        195.70201110839844,
+        118.77132415771484,
+        265.5343017578125,
+        250.1707000732422
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.26033294200897217,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "gRl2=[>;A<M3E9M220O3N2kB_Nh<c1:2N0OO2O0K6N1N2K6N20O2O000O10O0000O2VOfNmC[1P<k0N200O2O2NO2L3M43M2MO2D<NXDVN]:j1]100OoCUNVO2];i1]EYNPO4`;b1`EgN_:Y1bEfN^:Y1cEgN^:X1bEhN^:X1bEiN^:U1cElN\\:T1dEkN^:T1bElN^:U1aEkN`:U1^EkNd:V1ZEjNh:T1XElNi:S1WElNl:S1SEmNR;P1dDaN_O`0S<OYDOFDLg0^<WO]D8XOh0]=UObBk0c=QO\\BP1i=1O14L:SOWBM_P`5"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        40.5164909362793,
+        274.6570739746094,
+        85.65011596679688,
+        394.9385681152344
+      ],
+      "class_index": 39,
+      "class_name": "tennis racket",
+      "score": 0.24392254650592804,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "lPc0R1m=8H2N1O2O:F:SCWNo;c2K2N1N3N0O2O1O00O2O002N1O2M3M3N1N3N2MN4N04L1O003M4L3M4L5KO11N2O0N3L5L4L4M3L4MX[S8"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        19.257665634155273,
+        275.6024475097656,
+        64.26637268066406,
+        347.2621765136719
+      ],
+      "class_index": 27,
+      "class_name": "handbag",
+      "score": 0.23264583945274353,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "kV9140b>>H6K4L3N2M3N2N1N3N2N2N1O2N1O2M2O2L4M2O2M3N1O2O1O001O01O1O001N2O1O0O2N3L2N3HfBeN`=W18M5J9D9J5JWf]8"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        360.6103210449219,
+        122.26512908935547,
+        399.9779052734375,
+        168.4712371826172
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.22200347483158112,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "VYZ5>`>6K4K6K5K00100O01O001O0O20000O01000O11O01OO11O01O010O01003MO1O102CSBAo=<TBBP>9RBFR>4P\\`3"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        19.257665634155273,
+        275.6024475097656,
+        64.26637268066406,
+        347.2621765136719
+      ],
+      "class_index": 25,
+      "class_name": "backpack",
+      "score": 0.19109168648719788,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "ge9?^>6K3M4L3N2N2M2O3M1O2N2N1O2N1N3M2N3M2N3N2M3O0O2O0010O001O1O0O2O1O1N2M4K3M4K7L5K7G9H8H7IUf]8"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        296.00970458984375,
+        128.18557739257812,
+        411.143798828125,
+        447.82421875
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.17896310985088348,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "i^Z4`030l<`3iMe0\\O9F<K5K3N_O`0K6J6J60O101O00;E8Ho0QO8H7I=C1O1O1O1O1O001OO2O001N2M4K5F:I6N2M3M3M4010O2M3^G]J`7a3XHnMLQOd7m2cHZOY7a0lHBQ72ZI2d6>fHH[7n33N1]IZIg4g6`JQJ`5A]Jm6f5QI\\Jl6g5QI[Jn6h5nH[JP7h5lHZJS7i5jHXJT7n5fHTJY7j6N2O1O1O1O1O1O1O1O1N2K5SOm0L4M3WOaGnJb8n4j001N1000000010O0aFlJR9T5iFSKU9n4gFVKX9j4hFVKW9k4iFUKV9l4jFUKU9j4lFVKR9m4mFTKl8R5TGnJc8[5]GeJ_8_5`GcJ\\8T6fM_IkKj6l3_IjKi6o3_IhKh6S4`IbKi6X4R2K5K5N3M6G:F=Di0WO:D9F9E:]Of0E;G9H6HWc[3"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        90.26394653320312,
+        232.42642211914062,
+        107.68928527832031,
+        304.67913818359375
+      ],
+      "class_index": 27,
+      "class_name": "handbag",
+      "score": 0.17806677520275116,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "hf]115097j=b00000O2O2PB[O`=Q13M5K5K:CUSi7"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        17.540597915649414,
+        223.6990203857422,
+        74.45854949951172,
+        357.84771728515625
+      ],
+      "class_index": 25,
+      "class_name": "backpack",
+      "score": 0.1730068176984787,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "he9<a>7I4M4L4L3N1O2M3M3N2M3N1O1O1N3K5M3N1N3M2N3N2O2M2O11N1O011N3M1O1N1N3L6K2N3N4M3M1O2M5LlMQO_Fg0a9XObFg0]9WOfFh0k;N5J4D?HlkZ8"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        407.1445617675781,
+        108.82315826416016,
+        489.1515808105469,
+        228.53311157226562
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.15672613680362701,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "XZP67l10i:2nD8P;HlD<S;DjDa0R;ZOUEi0h:XOWEh0h:[OVEf0h:\\OREj0o:TOPDJm0k0W;WOlC3j0c0i;^O\\CN=b0d;YOZD7D0=`0d;[O[D4D3;>f;\\O\\D1B7;<h;YO^D2A5=?g<@bC7_<IiCNX<2iCKX<6Y1O0000O02000O1DIkA:S>;N1E\\O[Be0c=<O2N3M3N1bCeNoN3n;Y1SEcNQO3l;[1YEeNf:\\1ZEdNe:_1YEbNe:`1YEbNf:_1ZE`Ne:a1\\E\\Nf:e1Z11O2N2RCXNMN\\<j1fC`NZ<`1fC`NZ<`1fC`NZ<V2bCaMU<k2J5K2N1O001O001OO2O1O1nM^Dc0d;XObDf0_;WOdDh0];VOdDj0^;ROeDm0_;bNoC1f0[1f<O1SO`B6c=CdBN0I_=9aBM2I^=:_BM3I^=:_BM3I`=h0=0O0001O1O5FeTV2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        395.5857849121094,
+        119.4764633178711,
+        432.88629150390625,
+        213.2981414794922
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.15519243478775024,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "kVk5<^>6^Oc0OM07WBkN^=^1N0O2O0O1^ObNdC\\1Y<hNfCX1Y<jNfCU1X<oNfCj0`<YO\\C]OMY1f<=_CcN_<]1fC_NZ<a1iC]NV<a1e0O1O2N2O0O2O010O1O101K5HYBSOi=l0YBROi=h0;OTmP3"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        297.1956481933594,
+        156.47959899902344,
+        321.8094177246094,
+        218.2650146484375
+      ],
+      "class_index": 28,
+      "class_name": "tie",
+      "score": 0.15488176047801971,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "bY]44P><UBBN4^=Z1N100O2O001O10O1O2N1UOdB0]=LhB2[=GlB6Y=@nB>l=N2N4Fcie4"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        21.3872127532959,
+        251.99526977539062,
+        89.13289642333984,
+        394.9803771972656
+      ],
+      "class_index": 39,
+      "class_name": "tennis racket",
+      "score": 0.15353013575077057,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "fT:`0^>4K5M3M2N2N1N3M3M2N3N2N1O2M2O1N3L4M3M3N101O1000001^CnMS<S2cC\\NV<[2M2N2M2O1N11O00001O0O2O1O2M101N3N010N3M2N2N002N3M2N6J4L2N1N2O1L4M4L5L2N4L7G5M2N2LomQ8"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        406.86322021484375,
+        119.6652603149414,
+        442.2870178222656,
+        167.6361083984375
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.1506108194589615,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "[mn55e0N\\=6bBJ\\=8d03M3jACINh=c0[BFb=m0MM51O2YBiNb=Z111N100O10000O0100O100O1O100O2O001O4LO01VO]B7e=C`B;T>O2M4K\\el2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        214.21585083007812,
+        222.5799102783203,
+        273.3573913574219,
+        297.6091613769531
+      ],
+      "class_index": 39,
+      "class_name": "tennis racket",
+      "score": 0.14525648951530457,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "VnU33m>Oo>3m@33Ii12SN6N1O1O3M1O01O0O1O1O11N101ON3O00N2O10OO2M3N3N001O0O3OO01N10100O11N2O00O11N2O3M1N4M3M2M3I[AOg>0ke]5"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        28.056888580322266,
+        217.99365234375,
+        99.75634002685547,
+        391.2674865722656
+      ],
+      "class_index": 27,
+      "class_name": "handbag",
+      "score": 0.14416250586509705,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "\\]=o0o=4L4L3M2N3M3M3L4M3M2N3N1O2N2N1O110O20O17Hb0^O001N2000O1OO10O3N100N2N2N3N3L3M4L2N100O1O2N4L5K4L5K2N1N2O0O101M4N1N7I3L4M2K5KomQ8"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        413.634521484375,
+        404.47857666015625,
+        460.6542663574219,
+        471.37969970703125
+      ],
+      "class_index": 25,
+      "class_name": "backpack",
+      "score": 0.13233304023742676,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "UPR6=a>4L3M3N2M3N4K6`BoNi<R1UCoNj<U1RClNn<Y192O10O0O20O0010O001O10O01O010O00001O001O2M10001O010O00001N1N3K5J5J6M3L5Lknc2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        399.1954650878906,
+        146.15008544921875,
+        461.9408264160156,
+        343.9172668457031
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.1282217651605606,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "[gl5m0f=e0`LbNbHn1U7[NdHi1[7bNQHg1P8lM\\HQ2i8gM[FV2g9PNTFS2c9XNPF_OZO]2T:aMPFj0>n1g9YNXFe1i9]NVFc1c9eN\\F[1d9eN\\F\\1d9hNmE`1W:]MfEc3_:ZLiE^3Z:aLhE]3o:N3M2hLbDl2];;100NhNnLfFn2Z9VMfFh2]9WMcFJUO`2]:dM^FKWO_2W:kM`Fa2_9dMYF_2m9_MRF_2S:_MmE_2V:_MRFY2P:fMRF0@Y1a:eNQFOBY1`:fNnE1BX1b:fNkE2DW1c:eNjE5AU1h:bNjE:]OS1k:`NjE=ZOS1S<lNnCS1R<oNmCP1o;XOmCh0P<T13O2]NbC?c<k04I7L2O1_OQCQOc<U1dCiNZ<U1k0K6B=K5I8LVVd2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        214.21585083007812,
+        222.5799102783203,
+        273.3573913574219,
+        297.6091613769531
+      ],
+      "class_index": 35,
+      "class_name": "baseball bat",
+      "score": 0.1280520111322403,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "hR\\31o>000K0ZA0e>231L3010OO011O0O1O1N2N2O0O2M3O10O01O1N2O010001O1N011O2M3M2O102MhR_5"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        19.00937843322754,
+        253.9563446044922,
+        79.48599243164062,
+        387.8605651855469
+      ],
+      "class_index": 27,
+      "class_name": "handbag",
+      "score": 0.12781134247779846,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "nV91i>;I5I7J4N2N3M2L3O2M3M3N2N2N1N2N2N2M4N2M3M2O101N2000O10O20d0[O4M1M2O1O001OO101N2N2O1M3N3N6I3L3N010O1O3M3M4^NUCf0g=L3M4L6J3M8H7HTcV8"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        413.96417236328125,
+        404.2671203613281,
+        460.7293395996094,
+        462.6201171875
+      ],
+      "class_index": 36,
+      "class_name": "baseball glove",
+      "score": 0.12776561081409454,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "T_R6?^>5M1M5M3M2N4L4L5L2N1O1O1OO1010O10O001O010O00010O0000100O1O001O001O0O2O1O000O1N3L4I6K5M3M5K5Gm_c2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        46.6235237121582,
+        307.46636962890625,
+        92.1654281616211,
+        392.41534423828125
+      ],
+      "class_index": 39,
+      "class_name": "tennis racket",
+      "score": 0.12745927274227142,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "Xme06e><F6K6J3M4PO@WCf0`<S1N1O001O1O0012M1O10000O00011N1O001O1O1O4L5K1O0O2O1N2M3M4M2N3N3L3M6J6I8I7H3KdoP8"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        401.93450927734375,
+        116.56241607666016,
+        445.6620788574219,
+        232.3953094482422
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.12734897434711456,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "bam5m0i=:N3M3L4N4VO`NnCa1o;dNoC\\1k;kNRDW1l;mNPD5J3T<MTDHL<k;2UD_O4a0c;h0]DWOb;f0iDQOW;m0_110O0N3O1O1O010O1O10O11M3O001N3M2O2M<D6K4K_cm2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        319.29736328125,
+        119.40087127685547,
+        437.3561706542969,
+        474.6171875
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.12510058283805847,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "Pem4i1l<`1\\IjLROn5QN[Jo1j5_KVJT13^3P7ZLSIg3o6ULQIm3f2QKb0o0jLR4k6lKWIV4g6hK[Ia45iJf4d0WK\\6a4bIaKZ6d4cI]K[6f4cI[K[6j4`IYK^6k4^IVKa6m4[IUKc6Q5TIUKj6a6N2O1N3M2O1N2O001N2O1L3J6[Oe0I7M3M4@?K6K5O00100O1000000001N1O1N2N2]Og0Cc0Bb0^O5H8hMUInKW7j3kIQK`6h4P2L5M3K6H8F;F=DR1oN=B8M3015jCkMW<T2J1L100O1O0gFSN\\5m1gJSNj4X2ZKhMd4W2^KjM`4U2bKkM_4T2cKfMb4Z2`K`Md4_2o30=oNR1mNR]V3"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        383.4820556640625,
+        389.20166015625,
+        407.0074768066406,
+        454.01031494140625
+      ],
+      "class_index": 40,
+      "class_name": "bottle",
+      "score": 0.12396573275327682,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "`]d59d>7J3M3K3N3M2O2N3M2N3L2L5K5M3NK72dB_NU=_178H00ETCbNT=o0UZ]3"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        500.15020751953125,
+        375.099853515625,
+        587.6026000976562,
+        465.13238525390625
+      ],
+      "class_index": 27,
+      "class_name": "handbag",
+      "score": 0.11963504552841187,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "^f[7:22P>e0J4N2N1O2M3N1O2N1O1N2O10001O00000O020O01O1O2M3N2N1O1O001O100O001O1O1000O010O0010010O4L1N1O103L10O1O0O100O2O100O0O1O2O01O100OO2O1N110O010O00001N100O2O00001N1N3N4L2C=JPmh0"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        214.7766571044922,
+        221.82595825195312,
+        273.5198974609375,
+        297.4353942871094
+      ],
+      "class_index": 27,
+      "class_name": "handbag",
+      "score": 0.11374283581972122,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "WnU31n\\11lQO4l`0NS_O4OO01O10O1L1200O11OO0O4N1ON2O10O1N3OO02L3N101N2O1N2000OO2O1O0101N3N000O103L3M2N2O3G\\A0\\a_5"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        60.69662094116211,
+        227.4261016845703,
+        111.7551498413086,
+        303.3561706542969
+      ],
+      "class_index": 27,
+      "class_name": "handbag",
+      "score": 0.11367932707071304,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "\\SP12n>Ooe<1UkB2^>b0J11O11N03N3M1:GL6J5I3N4Kleg7"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        203.6332244873047,
+        119.0437240600586,
+        270.2364501953125,
+        207.11485290527344
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.11245955526828766,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "]io2`0_>2N2O00O1O03N2L3N2O1N2O000O01000O1O010UOSObCn0Y<o0N1O2O1O1O1O1ON3L301O1N2O0O200O100O1000001O001O001000010N2O1WOfBI^=0gBO[=LgB;U=\\ORCb0g=O10O^OjA;V>CmA<T>AYS`5"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        404.8876953125,
+        184.609375,
+        517.3881225585938,
+        404.3916931152344
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.11209703981876373,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "dcn5?T>=SOn0H8H7M3N1N2L4dNaMcE2Ia2a:cM`EQ3^:TMZER3e:?6aLSEe2S;ZMRF`1Q:^NTF]1m9cNUFZ1k9gNUFY1k9hNTFW1m9iNSFW1Z1[Ni5>mHV1Z1^Ng5d0iHh0S1gNmM3T8a0iHb0m0KW6ClHa0k00X6@lH?j05Y6\\OnH=i08Y6[OnH<e0>]6VOPI9b0c0^6TOSI5`0g0]6TOVI0;P1^6QOXIK;V1]6oNXII:[1^6lNYIFCV2T7TNYIEDX2R7SNZIEDX2R7SNZIDFX2P7TNZICIW2m6VN[I@@d2U7mM[I[OXOS3]7bM]IVOUO\\3^7_MSJe2m5[MQJg2o5YMPJh2P6WMQJi2o5WMQJi2o5VMPJl2Q6QMPJP3P6hLWJY3j5bLZJ^3g5_LZJb3b80O1O1O1UOk0M3N2O1O100N2K5N200O100000000001O1O8H1O0000000000001N100000000OO2H60O101O2PLYFf2h9XM_Fc2a9[MbFc2^9\\MdFc2\\9\\MgFb2Y9\\MkFb2U9]MmFb2V9UMSGh2R9nLUGP3`:M3M2N2M4M2N3M2K5L4G:Ik[i1"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        30.170642852783203,
+        227.6923065185547,
+        71.98359680175781,
+        313.99090576171875
+      ],
+      "class_index": 27,
+      "class_name": "handbag",
+      "score": 0.11173104494810104,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "Z[>`0^>2O1O1N2N3L3M3N2N2L4O1O1001O1O1O1O1O1O1O1O1O001N2O1O2NWNXO\\Ee0d:]O]Ea0d:]O_E=e:C`E2e:OW2O00iY]8"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        95.10220336914062,
+        248.52500915527344,
+        108.98485565185547,
+        304.4754333496094
+      ],
+      "class_index": 27,
+      "class_name": "handbag",
+      "score": 0.109457828104496,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "[g]1:\\>;O2O2N1SB^OZ=b0aBB`=n03M7I5J7J5HRdh7"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        463.5377502441406,
+        178.87367248535156,
+        497.20538330078125,
+        218.38719177246094
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.10923195630311966,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "hVi65f>>G2lAAc=o0O00N2O1000000000000O10000000000000O1000O11OO10001N1O1N2O2_OoAMY>KhkR2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        214.21585083007812,
+        222.5799102783203,
+        273.3573913574219,
+        297.6091613769531
+      ],
+      "class_index": 28,
+      "class_name": "tie",
+      "score": 0.108862966299057,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "TjW33Zc60_kI5OO00O100O1N200M3O1O001M3O100O1O0O2O010000O2NO2001N2]OfA>_>O4Kja_5"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        410.03985595703125,
+        374.0647277832031,
+        462.9712829589844,
+        476.6827087402344
+      ],
+      "class_index": 27,
+      "class_name": "handbag",
+      "score": 0.10719062387943268,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "Z_R66f>6K4M6H5N2N1N7I4M2N5M3L00010000O001O001O000100O01N3O0O1N101N1O2O001O1O1O0O1O1M4J6K5K5Lild2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        36.132205963134766,
+        188.2311248779297,
+        111.41229248046875,
+        392.94873046875
+      ],
+      "class_index": 25,
+      "class_name": "backpack",
+      "score": 0.10681366175413132,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "Zda04e>8I6K7L5K<E1O1nBgN\\<\\1_CiN_<o1M5L1N0mCdMc;\\2XDlMe;S2[DoMe;P2ZDRNg;l1XDUNh;i1YDYNe;g1[D\\Nc;c1]D^Nf;b1UD`No;W21O0O2O5JkMdMjGj1RNZNR:OUHX1nMiNl9NVHX1PNkNj9LVHX1PNnNi9IYHW1PNoNf9L[HR1QNQOd9N[Ho0SNROb9N^Hn0PNTOc9GjHm0dM\\Of<OkB4?MW=OhB3Z=JeB7_=DaB=_=CaB<`=D`B<^=FaB:]=J`B6b=K[B6f=KXB5i=LUB4l=?b0^OQb4D[^K2O0]P2NcoM201O02MS_i7"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        60.69662094116211,
+        227.4261016845703,
+        111.7551498413086,
+        303.3561706542969
+      ],
+      "class_index": 25,
+      "class_name": "backpack",
+      "score": 0.1065581887960434,
+      "segmentation": {
+        "size": [
+          480,
+          640
+        ],
+        "counts": "jWn02m>2O0_O3hA4W>;0M4I7O2IYY3MofL0Pn00UY35ghKO00iAOb=k0M14J0011002L29EO6J7I4K2M5Kmeg7"
+      }
+    }
+  ]
+}

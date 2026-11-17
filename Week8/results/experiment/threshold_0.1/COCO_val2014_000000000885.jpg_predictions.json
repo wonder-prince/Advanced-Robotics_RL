@@ -1,0 +1,425 @@
+{
+  "image": "/Users/interstellar/Documents/vsc/Advanced-Robotics_RL/Week8/CenterMask-master/demo/images/COCO_val2014_000000000885.jpg",
+  "threshold": 0.1,
+  "inference_ms": [
+    171.35179199976847,
+    162.68824999860954,
+    161.14275000290945
+  ],
+  "instances": [
+    {
+      "bbox_xyxy": [
+        281.0122375488281,
+        182.80276489257812,
+        414.8652648925781,
+        396.6356506347656
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.5764922499656677,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "P^e3c0`<<I5K4K4K6M2N2N2M3N2N2N2O1O001O1O01O00000000100O001N10O10010O10000O100nGQNh4Q2SKUNj4m1oJZNn4i1jJ_NT5c1gJaNX5`1eJbN[5`1aJcN^5_1[JfNe5]1kIPOU6S1ZI[Of6h0TI[Ol6h0nH[OQ7`300000000000O100O1SOiHeKY7R4T1K5N2N2N2K5L301N1N2E;XOh0K410O11N1O2O2N1O2N1O2M2O2N1OVOiEbNW:]1jEdNT:]1mEbNR:_1nEaNR:_1nEaNP:a1QF_Nn9a1RF_Nn9b1PF`No9`1PFaNP:`1oEaNP:^20O01O01O00101O001N2O2Od0[O3N1SN[En0g:nN]EQ1i:eN[EZ1];N2N1O1O1O1O1O2N1O1O1O001N101O1N2O1N3M3L4M5JR\\n2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        592.4146118164062,
+        29.342674255371094,
+        639.2378540039062,
+        249.41343688964844
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.5380750894546509,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "Tig76m<a0C8H6M1O1O3L3oDiNi9\\1mEUOi9P1mEFc9X2dGhLW6d3ZHVLf0;n6V4^HRLa7l400O100O10000O1N2O1O1O000N2GXObIRKW6Y5nI`JR6a5l0003N3M3M4eH^Je6X6L3M1O1O000001O1N2dNPJXK^b0"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        245.77285766601562,
+        202.8568115234375,
+        284.3250427246094,
+        241.44876098632812
+      ],
+      "class_index": 33,
+      "class_name": "sports ball",
+      "score": 0.4732811450958252,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "WiV3c0f<3N1O1O2N1O2N1O101O0O2O1O2N1O0000000001O001O001O1O1O0O2O1N1O2N1O2M2O2N2M4LfWd4"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        406.98529052734375,
+        269.0986328125,
+        479.5054016113281,
+        309.79217529296875
+      ],
+      "class_index": 39,
+      "class_name": "tennis racket",
+      "score": 0.39873725175857544,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "_m\\53W=2O0O100O101N100O101N1O1O2O0O1O1O2N1O2N1O2N1O101N2N1O2O0O2O1N101N10001N1000000000000000000000000001O0O10001N101N101N2N2N3M2N2M5K3MW^R2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        290.506591796875,
+        84.66327667236328,
+        395.4940490722656,
+        237.69375610351562
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.3831334114074707,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "oho3;3M`<`0L5L3J7L3L4@dNkDb1m:b0N5K4L2O2N1O00100O100O1O1O1O1O1000N1oNeE]N0;[:S1XFkNg9U1oE_NK7Y:Z1kEgNHK^:^1iEjNa:V1[EnNd:S1^EkNb:U1`EhN`:Z1aEcN_:d1]EYNc:i1?0O1O2O2M3iEjMU9X2iFhMV9Y2jFgMV9Y2m0100O2O1kEeMX9]2bFgM^9\\2]FgMa9Z2_FfMa9Z2^FgMb9Y2]FhMb9Y2]FhMa9Z2`FeM^9^2bFaM\\9c2bF]M\\9b2gF^MU9e2mFZMP9g2RGZMl8f2UGZMj8f2WGZMi8f2WGZMh8g2YGXMf8h2[GXMe8i2YGXMf8i2ZGWMf8i2YGXMg8h2YGXMg8g2mFUMN5U9Q2mFPN0<R9d1TGhMMd0o8c1dG]N\\8b1fG^NY8`1iGaNV8^1kGeNR8Y1RHfNm7W1XHeNj7X1]HbNf7[1`H[Nf7c1YIXNo5e1RJ^Nn5>]G9h2YOk5<bG6d2_Om55eG6d2Be67`IFfRW3"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        496.89117431640625,
+        0.21465188264846802,
+        553.5989990234375,
+        14.220792770385742
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.3328547179698944,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "bm`62X=2N1O1O1000000O10000O1O1O100O1O100000000000000000000000000000000000000001O1O1O1O1O1O002N1O001O1O0O1000aXT1"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        418.9193115234375,
+        0.0,
+        470.27978515625,
+        13.697074890136719
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.2781049311161041,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "Pb_54W=0O2O000O1O02O001O1N0100I701O1O0000000000000000000000000000000000000006J3M00N200001O1O00001O1N^YW2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        536.0808715820312,
+        0.6292964220046997,
+        576.664306640625,
+        14.775530815124512
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.2372131496667862,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "mUQ73W=3M20OO1L40000000000000000000000O11ON200000000000000000000001O1O1O1O2M2N^Xj0"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        571.9505004882812,
+        0.053260162472724915,
+        630.7568969726562,
+        15.195740699768066
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.23268009722232819,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "Zn^72W=3M3M2O100O1N2000000000000000000000000000000000000000000000000000000000000001O000O2O00000000001O1O1O001O1O1N2O_b4"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        273.1945495605469,
+        96.8034439086914,
+        404.5042419433594,
+        284.0091247558594
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.1924307495355606,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "VVd35R=5L4L3J6J6N3M2N2L4M3N2N2O1N2O100O1O100O1O001N2O00001TO^NoE`1h9mNUFS1g9SOXFl0g9WOXFh0f9[OXFg0b9_O\\Fd0]9BaF`0V9IjF7R9MmF4o8W2J5O2N2N2M3N1N3N1O1O1N2OdMdGK[86eGJ[8c2O1O10O01O1O1O1O1OO2M2UMPHSNMi1T80eHJ_75cHI]79cHF\\7;dHE[7<eHEY7<gHDY7=fHCZ7=fHDY7=gHDW7<iHEU7<kHET7<jHFU7;iHGV7:gHHY7:aHK]78_HK`76_HVOEjNj7Q2bHSOIhNd7W2bHPOLiN_7Y2fHmNMhN\\7\\2iHiNLkNZ7^2jHfNMkNX7`2mHbNLnNU7c2PI]NLoNS7e2QI[NMPOQ7f2kHSMGW1>oNP7g2jHcN5fNP7g2lHcN5eNo6g2mHdN6cNm6h2nHfN5aNm6i2mHgN6`Nm6j2lHgN7^Nm6k2lHhN6\\No6l2kHhN7[Nn6n2jHhN7ZNo6n2iHlNi7U1THPOi78VHd0g7XOcHd0[7YOjHf0U7XORIc0n6YOYIe0f6XO_If0a6YOcIe0\\6ZOhIe0V6YOQJaN[Nk1a7CdJ9Z5EkJVOcM;a7=oJVOiM5Y7b0RKVOgM8W7>XKVOdM:e7KmJHaM;f7DoJO^M;i7]OmJ7[M;S<01N2N1O1O0O2O001O1NcTR3"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        293.5744323730469,
+        1.0797680616378784,
+        332.2449645996094,
+        11.928008079528809
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.18292470276355743,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "Ucj37T=1N1000001O00000000000000000000000O1000000000000000001O00000000000001N2O2Ng]P4"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        348.0335998535156,
+        0.0,
+        394.49468994140625,
+        11.1603364944458
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.1651601642370224,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "j[b43W=2O1N2O000O100O1000000000000000000000000000000000000O1000000000001O01O002N2N1O1O1N101OnTV3"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        272.0359191894531,
+        65.5930404663086,
+        420.1693115234375,
+        404.5255126953125
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.16075876355171204,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "fPe3;i<;H8I6J4L3M3L5L3M3O1O0O2O001O0O1O1O100O2N100L4C>F9O2L3L5K5K5N2N2O2M2N3M2N3M3hIRLm2T4fLYLS3n3eLZLW3j3bL\\L\\3g3_L]L`3e3YLaLf3c3hKlLW4\\3UKQMj4i5O0N2O1M3L4O1O00O1O1O1O1WOj0L3L4L4N102M3L3ZKnIj1]6RNmI_1[6aNhIm0h6VOUIg0m6]OoH?U7EgH8\\7K^H7c7g210O2M_M\\HAb7=cHB\\7>fHAY7?iH_OV7d0iH]OT7f0kHZOR7i0nHWOP7l0PISOn6o0RIQOm6P1SIQOk6Q1SIPOm6Q1RIoNm6S1QIoNn6S1oHnNP7U1mHmNR7g3N2O2M2O0O`LVIa0i6SOhIi0W6TOPJi0o5VOTJi0k5VOXJi0h5TO^Ji0b5TOgJg0X5WOoJe0P5XOXKc0i4ZO\\Kd0d4XOcKd0_4XORL:o3AXL=h3_O]L?d3]OaLa0`3XO^M1e2AeM>d710O010O1O010O1O001O1N3M3M3M3M2L5L5JjVo2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        256.1707458496094,
+        0.0,
+        331.9456787109375,
+        12.860520362854004
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.14755921065807343,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "ThZ34U=4N1O0000001O0O1000000000000000000000000000000000000000000000000000000000000000001O0001O000000000000000000O10000000000000000000000000000001O001O001O1Nh]P4"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        453.28192138671875,
+        1.3733484745025635,
+        507.4671630859375,
+        13.21523666381836
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.1335505247116089,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "UZm58S=0O10O10100000O000O1O10000O10000000000000000O10000000000000000000000000000000000001O000000000O100O1O1O1O3K[Qg1"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        605.4535522460938,
+        0.0,
+        635.9442749023438,
+        14.754681587219238
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.13011081516742706,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "fSm762Nm<9O1O01O00000O2O000000002NN120N010000000O100O2O0000O2N1N\\e1"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        403.204833984375,
+        0.28729328513145447,
+        498.16943359375,
+        14.574577331542969
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.12490000575780869,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "`lX51Z=0O2O001O0000001O0O101N100000001OO1000000000001O001OO1JJWC6i<600000O1001O0000000000001O00000000000000000005K001O001O0000O100O1000000O1O1O1000000000000O1000000000O100O10000O1000000001O0001MiVk1"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        550.5861206054688,
+        0.0,
+        607.8762817382812,
+        14.666007995605469
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.12158846855163574,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "Z[U71X=5K2001O0001N2N2M2000000000000000000001O1O001O001O0000O1O1N200000000000000000000000000000000000000000000000000001OnZ="
+      }
+    },
+    {
+      "bbox_xyxy": [
+        101.0903549194336,
+        0.0,
+        134.7347412109375,
+        9.234217643737793
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.1081726998090744,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "i[[13X=5K0O101O0000000000000000000001N10000000000000001O1O001O00job6"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        506.28912353515625,
+        0.3008153438568115,
+        577.8716430664062,
+        15.433226585388184
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.10802319645881653,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "XPc62W=3O1N1O100N2O2O000N2000000000O1000000000000000000001O00000001O001O1O1O001O1O0000O1O1000000N2000000000000N2001OO10000000000001O001O001O1N101O_Xj0"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        369.4579162597656,
+        136.6728057861328,
+        386.6353759765625,
+        188.45887756347656
+      ],
+      "class_index": 39,
+      "class_name": "tennis racket",
+      "score": 0.10713516175746918,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "]fk48R=1N2N2OO0O2N1O2O2MdP[3"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        245.77285766601562,
+        202.8568115234375,
+        284.3250427246094,
+        241.44876098632812
+      ],
+      "class_index": 15,
+      "class_name": "bird",
+      "score": 0.10162925720214844,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "ViV3b0h<3L2O1O2N1O101N101N2O2N1O2N00000000O101O00001O1O1O001O1N1O2N2N1O2M2O2N2M5JfWd4"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        453.28192138671875,
+        1.3733484745025635,
+        507.4671630859375,
+        13.21523666381836
+      ],
+      "class_index": 57,
+      "class_name": "chair",
+      "score": 0.10031421482563019,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "Zbn51V=6M101O1O00001O00000000000001O1OO10000O10000000000000000000000000000000000001O4L2N1OMNmB1S=0\\ai1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+COMMAND: /Users/interstellar/Documents/vsc/Advanced-Robotics_RL/Week8/.venv/bin/python Week8/CenterMask-master/demo/week8_experiment.py --thresholds 0.1 0.5 0.9 --limit 3 --device cpu --warmup 1 --repeats 3
+ENV: Python 3.11.13 | torch 2.5.1 | torchvision 0.20.1
+DEVICE: cpu | operators: torchvision inference fallback | threads: 4
+MODEL: centermask_M_v2_FPN_lite_res600_ms_bs32_1x.yaml | pretrained: centermask-lite-M-v2-ms-bs32-1x.pth
+WEIGHTS: strict=True, all model parameters matched; load=72.77 ms
+WARMUP: 1; repeats per image/threshold: 3
+COCO_val2014_000000000885.jpg | conf_th=0.1 | detections=23 | 165.06 ms | {"bird": 1, "chair": 1, "person": 18, "sports ball": 1, "tennis racket": 2}
+COCO_val2014_000000000885.jpg | conf_th=0.5 | detections= 2 | 162.19 ms | {"person": 2}
+COCO_val2014_000000000885.jpg | conf_th=0.9 | detections= 0 | 167.34 ms | {}
+COCO_val2014_000000001000.jpg | conf_th=0.1 | detections=50 | 151.03 ms | {"backpack": 5, "baseball bat": 1, "baseball glove": 1, "bottle": 1, "handbag": 12, "person": 24, "tennis racket": 4, "tie": 2}
+COCO_val2014_000000001000.jpg | conf_th=0.5 | detections= 3 | 147.61 ms | {"person": 3}
+COCO_val2014_000000001000.jpg | conf_th=0.9 | detections= 0 | 146.93 ms | {}
+COCO_val2014_000000005477.jpg | conf_th=0.1 | detections= 8 | 182.19 ms | {"airplane": 6, "car": 2}
+COCO_val2014_000000005477.jpg | conf_th=0.5 | detections= 0 | 171.57 ms | {}
+COCO_val2014_000000005477.jpg | conf_th=0.9 | detections= 0 | 174.42 ms | {}
+NUMERICS: all FCOS classification, regression and centerness outputs were finite
+SAVED: 9 visualizations, predictions JSON, metrics.csv, environment.json and resolved_config.yaml

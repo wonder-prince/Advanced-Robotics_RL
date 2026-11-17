@@ -1,0 +1,47 @@
+{
+  "image": "/Users/interstellar/Documents/vsc/Advanced-Robotics_RL/Week8/CenterMask-master/demo/images/COCO_val2014_000000000885.jpg",
+  "threshold": 0.5,
+  "inference_ms": [
+    163.2972920051543,
+    161.88787500141189,
+    161.39545899932273
+  ],
+  "instances": [
+    {
+      "bbox_xyxy": [
+        281.0122375488281,
+        182.80276489257812,
+        414.8652648925781,
+        396.6356506347656
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.5764922499656677,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "P^e3c0`<<I5K4K4K6M2N2N2M3N2N2N2O1O001O1O01O00000000100O001N10O10010O10000O100nGQNh4Q2SKUNj4m1oJZNn4i1jJ_NT5c1gJaNX5`1eJbN[5`1aJcN^5_1[JfNe5]1kIPOU6S1ZI[Of6h0TI[Ol6h0nH[OQ7`300000000000O100O1SOiHeKY7R4T1K5N2N2N2K5L301N1N2E;XOh0K410O11N1O2O2N1O2N1O2M2O2N1OVOiEbNW:]1jEdNT:]1mEbNR:_1nEaNR:_1nEaNP:a1QF_Nn9a1RF_Nn9b1PF`No9`1PFaNP:`1oEaNP:^20O01O01O00101O001N2O2Od0[O3N1SN[En0g:nN]EQ1i:eN[EZ1];N2N1O1O1O1O1O2N1O1O1O001N101O1N2O1N3M3L4M5JR\\n2"
+      }
+    },
+    {
+      "bbox_xyxy": [
+        592.4146118164062,
+        29.342674255371094,
+        639.2378540039062,
+        249.41343688964844
+      ],
+      "class_index": 1,
+      "class_name": "person",
+      "score": 0.5380750894546509,
+      "segmentation": {
+        "size": [
+          427,
+          640
+        ],
+        "counts": "Tig76m<a0C8H6M1O1O3L3oDiNi9\\1mEUOi9P1mEFc9X2dGhLW6d3ZHVLf0;n6V4^HRLa7l400O100O10000O1N2O1O1O000N2GXObIRKW6Y5nI`JR6a5l0003N3M3M4eH^Je6X6L3M1O1O000001O1N2dNPJXK^b0"
+      }
+    }
+  ]
+}

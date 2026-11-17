@@ -1,0 +1,25 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<title>Week8 CenterMask 实验结果</title><style>
+body{margin:32px;background:#f4f6fa;color:#17243a;font:16px system-ui}
+h1{font-size:28px}pre{padding:20px;background:#152238;color:#d8f3e8;white-space:pre-wrap;word-break:break-all;border-radius:8px}
+section{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+article{margin:0;background:white;padding:10px;border-radius:8px}img{width:100%}p{font-size:13px}
+</style><h1>Week8 · CenterMask 实例分割与阈值实验</h1>
+<p>原始 CenterMask-Lite / MobileNetV2；以下命令与耗时来自本次真实运行日志。</p><pre>COMMAND: /Users/interstellar/Documents/vsc/Advanced-Robotics_RL/Week8/.venv/bin/python Week8/CenterMask-master/demo/week8_experiment.py --thresholds 0.1 0.5 0.9 --limit 3 --device cpu --warmup 1 --repeats 3
+ENV: Python 3.11.13 | torch 2.5.1 | torchvision 0.20.1
+DEVICE: cpu | operators: torchvision inference fallback | threads: 4
+MODEL: centermask_M_v2_FPN_lite_res600_ms_bs32_1x.yaml | pretrained: centermask-lite-M-v2-ms-bs32-1x.pth
+WEIGHTS: strict=True, all model parameters matched; load=72.77 ms
+WARMUP: 1; repeats per image/threshold: 3
+COCO_val2014_000000000885.jpg | conf_th=0.1 | detections=23 | 165.06 ms | {&quot;bird&quot;: 1, &quot;chair&quot;: 1, &quot;person&quot;: 18, &quot;sports ball&quot;: 1, &quot;tennis racket&quot;: 2}
+COCO_val2014_000000000885.jpg | conf_th=0.5 | detections= 2 | 162.19 ms | {&quot;person&quot;: 2}
+COCO_val2014_000000000885.jpg | conf_th=0.9 | detections= 0 | 167.34 ms | {}
+COCO_val2014_000000001000.jpg | conf_th=0.1 | detections=50 | 151.03 ms | {&quot;backpack&quot;: 5, &quot;baseball bat&quot;: 1, &quot;baseball glove&quot;: 1, &quot;bottle&quot;: 1, &quot;handbag&quot;: 12, &quot;person&quot;: 24, &quot;tennis racket&quot;: 4, &quot;tie&quot;: 2}
+COCO_val2014_000000001000.jpg | conf_th=0.5 | detections= 3 | 147.61 ms | {&quot;person&quot;: 3}
+COCO_val2014_000000001000.jpg | conf_th=0.9 | detections= 0 | 146.93 ms | {}
+COCO_val2014_000000005477.jpg | conf_th=0.1 | detections= 8 | 182.19 ms | {&quot;airplane&quot;: 6, &quot;car&quot;: 2}
+COCO_val2014_000000005477.jpg | conf_th=0.5 | detections= 0 | 171.57 ms | {}
+COCO_val2014_000000005477.jpg | conf_th=0.9 | detections= 0 | 174.42 ms | {}
+NUMERICS: all FCOS classification, regression and centerness outputs were finite
+SAVED: 9 visualizations, predictions JSON, metrics.csv, environment.json and resolved_config.yaml
+</pre><section><article><img src="threshold_0.1/COCO_val2014_000000000885.jpg_result.png"><p>COCO_val2014_000000000885.jpg | threshold=0.1 | 23 detections | 165.06 ms</p></article><article><img src="threshold_0.5/COCO_val2014_000000000885.jpg_result.png"><p>COCO_val2014_000000000885.jpg | threshold=0.5 | 2 detections | 162.19 ms</p></article><article><img src="threshold_0.9/COCO_val2014_000000000885.jpg_result.png"><p>COCO_val2014_000000000885.jpg | threshold=0.9 | 0 detections | 167.34 ms</p></article><article><img src="threshold_0.1/COCO_val2014_000000001000.jpg_result.png"><p>COCO_val2014_000000001000.jpg | threshold=0.1 | 50 detections | 151.03 ms</p></article><article><img src="threshold_0.5/COCO_val2014_000000001000.jpg_result.png"><p>COCO_val2014_000000001000.jpg | threshold=0.5 | 3 detections | 147.61 ms</p></article><article><img src="threshold_0.9/COCO_val2014_000000001000.jpg_result.png"><p>COCO_val2014_000000001000.jpg | threshold=0.9 | 0 detections | 146.93 ms</p></article><article><img src="threshold_0.1/COCO_val2014_000000005477.jpg_result.png"><p>COCO_val2014_000000005477.jpg | threshold=0.1 | 8 detections | 182.19 ms</p></article><article><img src="threshold_0.5/COCO_val2014_000000005477.jpg_result.png"><p>COCO_val2014_000000005477.jpg | threshold=0.5 | 0 detections | 171.57 ms</p></article><article><img src="threshold_0.9/COCO_val2014_000000005477.jpg_result.png"><p>COCO_val2014_000000005477.jpg | threshold=0.9 | 0 detections | 174.42 ms</p></article></section><p>Checkpoint SHA256: b3b2490756cb8c3c866c0a39ec44bf40c28f1c39a6d22c11995be2e4be54eac2</p></html>
