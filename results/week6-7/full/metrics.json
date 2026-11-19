@@ -1,0 +1,672 @@
+{
+  "runs": {
+    "week6_hard_dqn": {
+      "source": "Week6/data/hw5_offline_pointmass_hard_dqn_PointmassHard-v0_s64_l2_d0.95_doubleq_03-11-2026_12-02-15",
+      "eval_return": [
+        {
+          "step": 0,
+          "value": -100.0
+        },
+        {
+          "step": 10000,
+          "value": -99.30000305175781
+        },
+        {
+          "step": 20000,
+          "value": -39.900001525878906
+        },
+        {
+          "step": 30000,
+          "value": -55.099998474121094
+        },
+        {
+          "step": 40000,
+          "value": -36.400001525878906
+        },
+        {
+          "step": 50000,
+          "value": -33.70000076293945
+        },
+        {
+          "step": 60000,
+          "value": -33.400001525878906
+        },
+        {
+          "step": 70000,
+          "value": -46.599998474121094
+        },
+        {
+          "step": 80000,
+          "value": -49.0
+        },
+        {
+          "step": 90000,
+          "value": -34.79999923706055
+        },
+        {
+          "step": 100000,
+          "value": -32.0
+        },
+        {
+          "step": 110000,
+          "value": -33.099998474121094
+        },
+        {
+          "step": 120000,
+          "value": -32.400001525878906
+        },
+        {
+          "step": 130000,
+          "value": -32.400001525878906
+        },
+        {
+          "step": 140000,
+          "value": -35.400001525878906
+        },
+        {
+          "step": 150000,
+          "value": -36.20000076293945
+        },
+        {
+          "step": 160000,
+          "value": -33.29999923706055
+        },
+        {
+          "step": 170000,
+          "value": -35.400001525878906
+        },
+        {
+          "step": 180000,
+          "value": -36.599998474121094
+        },
+        {
+          "step": 190000,
+          "value": -36.0
+        }
+      ],
+      "final_eval_return": -36.0,
+      "best_eval_return": -32.0,
+      "checkpoints": [
+        {
+          "file": "checkpoints/week6_hard_dqn_final_agent.pt",
+          "bytes": 42162,
+          "sha256": "03cfaf0ebab73a9d27526b3ea2c4ddece05a3b6d3b224f7eeac0383dba6f8144",
+          "tensors": 12
+        }
+      ]
+    },
+    "week6_hard_cql": {
+      "source": "Week6/data/hw5_offline_PointmassHard-v0_cql0.1_03-11-2026_12-03-54",
+      "eval_return": [
+        {
+          "step": 0,
+          "value": -100.0
+        },
+        {
+          "step": 10000,
+          "value": -100.0
+        },
+        {
+          "step": 20000,
+          "value": -42.70000076293945
+        },
+        {
+          "step": 30000,
+          "value": -36.29999923706055
+        },
+        {
+          "step": 40000,
+          "value": -37.599998474121094
+        },
+        {
+          "step": 50000,
+          "value": -36.400001525878906
+        },
+        {
+          "step": 60000,
+          "value": -41.900001525878906
+        },
+        {
+          "step": 70000,
+          "value": -34.0
+        },
+        {
+          "step": 80000,
+          "value": -38.400001525878906
+        },
+        {
+          "step": 90000,
+          "value": -33.20000076293945
+        },
+        {
+          "step": 100000,
+          "value": -40.79999923706055
+        },
+        {
+          "step": 110000,
+          "value": -38.400001525878906
+        },
+        {
+          "step": 120000,
+          "value": -34.79999923706055
+        },
+        {
+          "step": 130000,
+          "value": -34.70000076293945
+        },
+        {
+          "step": 140000,
+          "value": -36.0
+        },
+        {
+          "step": 150000,
+          "value": -34.900001525878906
+        },
+        {
+          "step": 160000,
+          "value": -35.599998474121094
+        },
+        {
+          "step": 170000,
+          "value": -34.400001525878906
+        },
+        {
+          "step": 180000,
+          "value": -36.5
+        },
+        {
+          "step": 190000,
+          "value": -35.400001525878906
+        }
+      ],
+      "final_eval_return": -35.400001525878906,
+      "best_eval_return": -33.20000076293945,
+      "checkpoints": [
+        {
+          "file": "checkpoints/week6_hard_cql_final_agent.pt",
+          "bytes": 42162,
+          "sha256": "3ac240cb057d45b54276ea393bf3121eb40a312b533dba89d970aa002b351a6a",
+          "tensors": 12
+        }
+      ]
+    },
+    "week6_hard_awac": {
+      "source": "Week6/data/hw5_offline_PointmassHard-v0_awac10.0_03-11-2026_12-13-21",
+      "eval_return": [
+        {
+          "step": 0,
+          "value": -100.0
+        },
+        {
+          "step": 10000,
+          "value": -90.5
+        },
+        {
+          "step": 20000,
+          "value": -84.4000015258789
+        },
+        {
+          "step": 30000,
+          "value": -91.5
+        },
+        {
+          "step": 40000,
+          "value": -85.69999694824219
+        },
+        {
+          "step": 50000,
+          "value": -97.19999694824219
+        },
+        {
+          "step": 60000,
+          "value": -84.9000015258789
+        },
+        {
+          "step": 70000,
+          "value": -95.0999984741211
+        },
+        {
+          "step": 80000,
+          "value": -92.0
+        },
+        {
+          "step": 90000,
+          "value": -99.5999984741211
+        },
+        {
+          "step": 100000,
+          "value": -90.69999694824219
+        },
+        {
+          "step": 110000,
+          "value": -78.80000305175781
+        },
+        {
+          "step": 120000,
+          "value": -80.0999984741211
+        },
+        {
+          "step": 130000,
+          "value": -92.30000305175781
+        },
+        {
+          "step": 140000,
+          "value": -81.80000305175781
+        },
+        {
+          "step": 150000,
+          "value": -81.80000305175781
+        },
+        {
+          "step": 160000,
+          "value": -85.0999984741211
+        },
+        {
+          "step": 170000,
+          "value": -92.4000015258789
+        },
+        {
+          "step": 180000,
+          "value": -95.19999694824219
+        },
+        {
+          "step": 190000,
+          "value": -70.19999694824219
+        }
+      ],
+      "final_eval_return": -70.19999694824219,
+      "best_eval_return": -70.19999694824219,
+      "checkpoints": [
+        {
+          "file": "checkpoints/week6_hard_awac_final_agent.pt",
+          "bytes": 114232,
+          "sha256": "6efbf284b1ba9e88b1fcfa7ed463b9fe9c82de53783697bb0227fc9854d7a045",
+          "tensors": 18
+        }
+      ]
+    },
+    "week6_hard_iql": {
+      "source": "Week6/data/hw5_offline_PointmassHard-v0_iql0.99_temp10.0_03-11-2026_12-09-44",
+      "eval_return": [
+        {
+          "step": 0,
+          "value": -100.0
+        },
+        {
+          "step": 10000,
+          "value": -91.0999984741211
+        },
+        {
+          "step": 20000,
+          "value": -85.5999984741211
+        },
+        {
+          "step": 30000,
+          "value": -94.30000305175781
+        },
+        {
+          "step": 40000,
+          "value": -81.80000305175781
+        },
+        {
+          "step": 50000,
+          "value": -100.0
+        },
+        {
+          "step": 60000,
+          "value": -89.30000305175781
+        },
+        {
+          "step": 70000,
+          "value": -94.5
+        },
+        {
+          "step": 80000,
+          "value": -86.5999984741211
+        },
+        {
+          "step": 90000,
+          "value": -97.0999984741211
+        },
+        {
+          "step": 100000,
+          "value": -90.69999694824219
+        },
+        {
+          "step": 110000,
+          "value": -99.69999694824219
+        },
+        {
+          "step": 120000,
+          "value": -85.4000015258789
+        },
+        {
+          "step": 130000,
+          "value": -96.80000305175781
+        },
+        {
+          "step": 140000,
+          "value": -91.9000015258789
+        },
+        {
+          "step": 150000,
+          "value": -83.19999694824219
+        },
+        {
+          "step": 160000,
+          "value": -82.5
+        },
+        {
+          "step": 170000,
+          "value": -86.5
+        },
+        {
+          "step": 180000,
+          "value": -83.5999984741211
+        },
+        {
+          "step": 190000,
+          "value": -87.5
+        }
+      ],
+      "final_eval_return": -87.5,
+      "best_eval_return": -81.80000305175781,
+      "checkpoints": [
+        {
+          "file": "checkpoints/week6_hard_iql_final_agent.pt",
+          "bytes": 153348,
+          "sha256": "4a5ecabd52e94cae06594cee0a1f8739ee3413b204d13b02400e474996ff5abd",
+          "tensors": 30
+        }
+      ]
+    },
+    "week6_hard_cql_finetune": {
+      "source": "Week6/data/hw5_finetune_PointmassHard-v0_cql1.0_03-11-2026_12-17-55",
+      "eval_return": [
+        {
+          "step": 0,
+          "value": -100.0
+        },
+        {
+          "step": 10000,
+          "value": -85.19999694824219
+        },
+        {
+          "step": 20000,
+          "value": -57.599998474121094
+        },
+        {
+          "step": 30000,
+          "value": -52.79999923706055
+        },
+        {
+          "step": 40000,
+          "value": -35.099998474121094
+        },
+        {
+          "step": 50000,
+          "value": -36.20000076293945
+        },
+        {
+          "step": 60000,
+          "value": -45.70000076293945
+        },
+        {
+          "step": 70000,
+          "value": -42.400001525878906
+        },
+        {
+          "step": 80000,
+          "value": -40.099998474121094
+        },
+        {
+          "step": 90000,
+          "value": -50.20000076293945
+        },
+        {
+          "step": 110000,
+          "value": -48.70000076293945
+        },
+        {
+          "step": 120000,
+          "value": -53.900001525878906
+        },
+        {
+          "step": 130000,
+          "value": -34.400001525878906
+        },
+        {
+          "step": 140000,
+          "value": -40.900001525878906
+        },
+        {
+          "step": 150000,
+          "value": -51.79999923706055
+        },
+        {
+          "step": 160000,
+          "value": -43.599998474121094
+        },
+        {
+          "step": 170000,
+          "value": -46.5
+        },
+        {
+          "step": 180000,
+          "value": -48.5
+        },
+        {
+          "step": 190000,
+          "value": -42.29999923706055
+        }
+      ],
+      "final_eval_return": -42.29999923706055,
+      "best_eval_return": -34.400001525878906,
+      "checkpoints": [
+        {
+          "file": "checkpoints/week6_hard_cql_finetune_offline_agent.pt",
+          "bytes": 42194,
+          "sha256": "565ebda819ef4a2c0b584e651a598ecdabf6b35524b1a68bb162d3d3030c7cfa",
+          "tensors": 12
+        },
+        {
+          "file": "checkpoints/week6_hard_cql_finetune_finetuned_agent.pt",
+          "bytes": 42226,
+          "sha256": "c3d1362f8b4acd9c7c1ca3e839f6f4447b1e0e59b43750b27d9332ad28695aca",
+          "tensors": 12
+        }
+      ]
+    },
+    "week7_obstacles_mpc": {
+      "source": "Week7/data/obstacles-cs285-v0_obstacles_multi_l2_h250_mpcrandom_horizon10_actionseq1000_03-11-2026_12-34-59",
+      "eval_return": [
+        {
+          "step": 0,
+          "value": -39.72978591918945
+        },
+        {
+          "step": 1,
+          "value": -37.78041458129883
+        },
+        {
+          "step": 2,
+          "value": -38.70890808105469
+        },
+        {
+          "step": 3,
+          "value": -24.84971046447754
+        },
+        {
+          "step": 4,
+          "value": -37.17751693725586
+        },
+        {
+          "step": 5,
+          "value": -29.77597427368164
+        },
+        {
+          "step": 6,
+          "value": -35.97397994995117
+        },
+        {
+          "step": 7,
+          "value": -40.23786163330078
+        },
+        {
+          "step": 8,
+          "value": -31.124011993408203
+        },
+        {
+          "step": 9,
+          "value": -28.079931259155273
+        },
+        {
+          "step": 10,
+          "value": -26.923145294189453
+        },
+        {
+          "step": 11,
+          "value": -41.225223541259766
+        }
+      ],
+      "final_eval_return": -41.225223541259766,
+      "best_eval_return": -24.84971046447754,
+      "checkpoints": [
+        {
+          "file": "checkpoints/week7_obstacles_mpc_final_dynamics.pt",
+          "bytes": 793610,
+          "sha256": "d9bcad4a9b8bfa48c9437d090b7019b5c2378e550e238a604c7d37c519b5f3d0",
+          "tensors": 22
+        }
+      ]
+    },
+    "week6_easy_random": {
+      "source": "Week6/data/hw5_explore_PointmassEasy-v0_random_03-11-2026_11-58-37",
+      "eval_return": [
+        {
+          "step": 0,
+          "value": -50.0
+        },
+        {
+          "step": 5000,
+          "value": -50.0
+        }
+      ],
+      "final_eval_return": -50.0
+    },
+    "week6_easy_rnd": {
+      "source": "Week6/data/hw5_explore_PointmassEasy-v0_rnd1.0_zfilter_03-11-2026_11-58-46",
+      "eval_return": [
+        {
+          "step": 0,
+          "value": -50.0
+        },
+        {
+          "step": 5000,
+          "value": -26.0
+        }
+      ],
+      "final_eval_return": -26.0
+    },
+    "week6_medium_random": {
+      "source": "Week6/data/hw5_explore_PointmassMedium-v0_random_03-11-2026_11-59-46",
+      "eval_return": [
+        {
+          "step": 0,
+          "value": -144.1999969482422
+        },
+        {
+          "step": 5000,
+          "value": -150.0
+        }
+      ],
+      "final_eval_return": -150.0
+    },
+    "week6_medium_rnd": {
+      "source": "Week6/data/hw5_explore_PointmassMedium-v0_rnd1.0_zfilter_03-11-2026_11-59-52",
+      "eval_return": [
+        {
+          "step": 0,
+          "value": -150.0
+        },
+        {
+          "step": 5000,
+          "value": -150.0
+        }
+      ],
+      "final_eval_return": -150.0
+    },
+    "week6_hard_random": {
+      "source": "Week6/data/hw5_explore_PointmassHard-v0_random_03-11-2026_12-00-48",
+      "eval_return": [
+        {
+          "step": 0,
+          "value": -100.0
+        },
+        {
+          "step": 5000,
+          "value": -100.0
+        }
+      ],
+      "final_eval_return": -100.0
+    },
+    "week6_hard_rnd": {
+      "source": "Week6/data/hw5_explore_PointmassHard-v0_rnd1.0_zfilter_03-11-2026_12-00-54",
+      "eval_return": [
+        {
+          "step": 0,
+          "value": -100.0
+        },
+        {
+          "step": 5000,
+          "value": -59.20000076293945
+        }
+      ],
+      "final_eval_return": -59.20000076293945
+    }
+  },
+  "datasets": {
+    "pointmass_easy_random": {
+      "file": "datasets/pointmass_easy_random.pkl",
+      "bytes": 450571,
+      "sha256": "c185a65cf4961cac8118a41a0854aa2805efc8a11b9474609f980c8678511b8e",
+      "transitions": 10000
+    },
+    "pointmass_easy_rnd": {
+      "file": "datasets/pointmass_easy_rnd.pkl",
+      "bytes": 450571,
+      "sha256": "f7ee0872505624b32f21cbb49f9bf9d4cf5ade827b71c17e7b2b884c0d8ffb86",
+      "transitions": 10000
+    },
+    "pointmass_medium_random": {
+      "file": "datasets/pointmass_medium_random.pkl",
+      "bytes": 450571,
+      "sha256": "c7a1ea5c4da1e7b942f46f42547da71cb51b01b4b59b6c0f754cdd6dfcc92afa",
+      "transitions": 10000
+    },
+    "pointmass_medium_rnd": {
+      "file": "datasets/pointmass_medium_rnd.pkl",
+      "bytes": 450571,
+      "sha256": "e1e7ced26a8358d0908f6c820e3c991f1510e3d9c8e3ee527e228911190926f4",
+      "transitions": 10000
+    },
+    "pointmass_hard_random": {
+      "file": "datasets/pointmass_hard_random.pkl",
+      "bytes": 450571,
+      "sha256": "a3a1dab8f4f91b7538f8ca6788bbb18b8570e2b3344e8091a8f7c6eaa0953e26",
+      "transitions": 10000
+    },
+    "pointmass_hard_rnd": {
+      "file": "datasets/pointmass_hard_rnd.pkl",
+      "bytes": 450571,
+      "sha256": "2a90a76dbdd5691dcec9df5c2783a1e0fadf0d71eb1a8426b097363f530c2058",
+      "transitions": 10000
+    },
+    "pointmass_hard_rnd_online": {
+      "file": "datasets/pointmass_hard_rnd_online.pkl",
+      "bytes": 4500603,
+      "sha256": "63edec760816b29d32baec42adbb456075099635f040ef5624f1651984244069",
+      "transitions": 100000
+    }
+  }
+}
