@@ -1,0 +1,74 @@
+{
+  "random_mpc": {
+    "source": "Week7/data/cheetah-cs285-v0_cheetah_multi_l2_h250_mpcrandom_horizon15_actionseq1000_20-11-2026_00-22-17",
+    "eval_return": [
+      {
+        "step": 0,
+        "value": 122.56461334228516
+      },
+      {
+        "step": 1,
+        "value": 314.94390869140625
+      },
+      {
+        "step": 2,
+        "value": 356.3824768066406
+      },
+      {
+        "step": 3,
+        "value": 367.2532043457031
+      },
+      {
+        "step": 4,
+        "value": 329.4595947265625
+      },
+      {
+        "step": 5,
+        "value": 386.7095031738281
+      },
+      {
+        "step": 6,
+        "value": 380.9890441894531
+      },
+      {
+        "step": 7,
+        "value": 401.9310302734375
+      },
+      {
+        "step": 8,
+        "value": 414.6291198730469
+      },
+      {
+        "step": 9,
+        "value": 357.7221984863281
+      },
+      {
+        "step": 10,
+        "value": 385.3324279785156
+      },
+      {
+        "step": 11,
+        "value": 381.4193420410156
+      },
+      {
+        "step": 12,
+        "value": 381.2359924316406
+      },
+      {
+        "step": 13,
+        "value": 407.3628234863281
+      },
+      {
+        "step": 14,
+        "value": 416.5165100097656
+      }
+    ],
+    "final_eval_return": 416.5165100097656,
+    "best_eval_return": 416.5165100097656,
+    "checkpoint": {
+      "file": "checkpoints/random_mpc.pt",
+      "sha256": "5b3468ef810b5358eb1528d9d94e9105a2f2e793458dbb7a35b6ada2a1533e05",
+      "tensors": 22
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+    "Pyramids": {
+        "checkpoints": [
+            {
+                "steps": 499987,
+                "file_path": "/root/Week8/results/pyramids-gpu-1m/Pyramids/Pyramids-499987.onnx",
+                "reward": 1.164999932050705,
+                "creation_time": 1795108487.3307025,
+                "auxillary_file_paths": [
+                    "/root/Week8/results/pyramids-gpu-1m/Pyramids/Pyramids-499987.pt"
+                ]
+            },
+            {
+                "steps": 999922,
+                "file_path": "/root/Week8/results/pyramids-gpu-1m/Pyramids/Pyramids-999922.onnx",
+                "reward": 1.281499973187844,
+                "creation_time": 1795109651.8964124,
+                "auxillary_file_paths": [
+                    "/root/Week8/results/pyramids-gpu-1m/Pyramids/Pyramids-999922.pt"
+                ]
+            },
+            {
+                "steps": 1000050,
+                "file_path": "/root/Week8/results/pyramids-gpu-1m/Pyramids/Pyramids-1000050.onnx",
+                "reward": 1.281499973187844,
+                "creation_time": 1795109652.0072417,
+                "auxillary_file_paths": [
+                    "/root/Week8/results/pyramids-gpu-1m/Pyramids/Pyramids-1000050.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000050,
+            "file_path": "/root/Week8/results/pyramids-gpu-1m/Pyramids.onnx",
+            "reward": 1.281499973187844,
+            "creation_time": 1795109652.0072417,
+            "auxillary_file_paths": [
+                "/root/Week8/results/pyramids-gpu-1m/Pyramids/Pyramids-1000050.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1+cu124"
+    }
+}

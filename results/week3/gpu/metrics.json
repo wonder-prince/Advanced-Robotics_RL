@@ -1,0 +1,163 @@
+{
+  "environment": "ALE/SpaceInvaders-v5",
+  "target_train_steps": 10000000,
+  "status": "in_progress",
+  "last_eval_step": 750000,
+  "eval_episodes_per_point": 5,
+  "best_eval_step": 750000,
+  "best_eval_mean_reward": 780.0,
+  "last_eval_mean_reward": 780.0,
+  "best_model_sha256": "96970881bb92daad14d03bf0c06a323262d72b78686a3b97e48b4c92b99ec942",
+  "evaluations": [
+    {
+      "step": 25000,
+      "mean_reward": 187.0,
+      "std_reward": 24.20743687382041
+    },
+    {
+      "step": 50000,
+      "mean_reward": 151.0,
+      "std_reward": 130.93509842666327
+    },
+    {
+      "step": 75000,
+      "mean_reward": 183.0,
+      "std_reward": 102.35233265539189
+    },
+    {
+      "step": 100000,
+      "mean_reward": 196.0,
+      "std_reward": 163.99390232566574
+    },
+    {
+      "step": 125000,
+      "mean_reward": 95.0,
+      "std_reward": 29.49576240750525
+    },
+    {
+      "step": 150000,
+      "mean_reward": 166.0,
+      "std_reward": 116.2067123706716
+    },
+    {
+      "step": 175000,
+      "mean_reward": 175.0,
+      "std_reward": 36.87817782917155
+    },
+    {
+      "step": 200000,
+      "mean_reward": 183.0,
+      "std_reward": 57.23635208501674
+    },
+    {
+      "step": 225000,
+      "mean_reward": 133.0,
+      "std_reward": 51.536394906900505
+    },
+    {
+      "step": 250000,
+      "mean_reward": 125.0,
+      "std_reward": 65.72670690061993
+    },
+    {
+      "step": 275000,
+      "mean_reward": 220.0,
+      "std_reward": 93.96807968666806
+    },
+    {
+      "step": 300000,
+      "mean_reward": 193.0,
+      "std_reward": 48.53864439804639
+    },
+    {
+      "step": 325000,
+      "mean_reward": 229.0,
+      "std_reward": 99.2169340384997
+    },
+    {
+      "step": 350000,
+      "mean_reward": 74.0,
+      "std_reward": 30.886890422961002
+    },
+    {
+      "step": 375000,
+      "mean_reward": 253.0,
+      "std_reward": 133.28915934913837
+    },
+    {
+      "step": 400000,
+      "mean_reward": 168.0,
+      "std_reward": 66.37770710110436
+    },
+    {
+      "step": 425000,
+      "mean_reward": 171.0,
+      "std_reward": 77.93587107359485
+    },
+    {
+      "step": 450000,
+      "mean_reward": 156.0,
+      "std_reward": 34.40930106817051
+    },
+    {
+      "step": 475000,
+      "mean_reward": 406.0,
+      "std_reward": 118.04236527620073
+    },
+    {
+      "step": 500000,
+      "mean_reward": 315.0,
+      "std_reward": 48.78524367060187
+    },
+    {
+      "step": 525000,
+      "mean_reward": 410.0,
+      "std_reward": 158.90248582070703
+    },
+    {
+      "step": 550000,
+      "mean_reward": 411.0,
+      "std_reward": 111.1935249913411
+    },
+    {
+      "step": 575000,
+      "mean_reward": 528.0,
+      "std_reward": 160.86018774078315
+    },
+    {
+      "step": 600000,
+      "mean_reward": 422.0,
+      "std_reward": 169.5464538113375
+    },
+    {
+      "step": 625000,
+      "mean_reward": 420.0,
+      "std_reward": 235.6056026498521
+    },
+    {
+      "step": 650000,
+      "mean_reward": 323.0,
+      "std_reward": 42.96510211788167
+    },
+    {
+      "step": 675000,
+      "mean_reward": 600.0,
+      "std_reward": 163.6154026979123
+    },
+    {
+      "step": 700000,
+      "mean_reward": 629.0,
+      "std_reward": 198.8818744883505
+    },
+    {
+      "step": 725000,
+      "mean_reward": 521.0,
+      "std_reward": 188.45158529447292
+    },
+    {
+      "step": 750000,
+      "mean_reward": 780.0,
+      "std_reward": 323.0479840519052
+    }
+  ]
+}

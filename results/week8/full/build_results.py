@@ -67,8 +67,10 @@ def main() -> None:
     for axis, (run_name, behavior, target) in zip(axes, completed):
         run = OUT / run_name
         history = read_scalars(run, behavior)
-        reward_tag = next(
-            (tag for tag in history if "Cumulative Reward" in tag), None
+        reward_tag = (
+            "Environment/Group Cumulative Reward"
+            if behavior == "SoccerTwos"
+            else "Environment/Cumulative Reward"
         )
         if reward_tag is None:
             raise RuntimeError(f"No cumulative reward in {run}: {list(history)}")
@@ -78,8 +80,11 @@ def main() -> None:
         if final_checkpoint["steps"] < target:
             raise RuntimeError(f"Incomplete checkpoint for {run_name}")
         model = run / f"{behavior}.onnx"
-        axis.plot([p["step"] for p in points], [p["value"] for p in points])
-        axis.set(title=behavior, xlabel="Trainer steps", ylabel="Mean cumulative reward")
+        axis.plot([p["step"] / 1_000 for p in points], [p["value"] for p in points])
+        axis.set(
+            title=behavior, xlabel="Trainer steps (thousands)",
+            ylabel="Mean group reward" if behavior == "SoccerTwos" else "Mean cumulative reward",
+        )
         axis.grid(alpha=0.3)
         metrics[run_name] = {
             "behavior": behavior,
@@ -93,6 +98,9 @@ def main() -> None:
             "all_tags": list(history),
             "reward_history": points,
         }
+        if behavior == "SoccerTwos" and "Self-play/ELO" in history:
+            metrics[run_name]["elo_history"] = history["Self-play/ELO"]
+            metrics[run_name]["final_elo"] = history["Self-play/ELO"][-1]["value"]
     fig.savefig(OUT / "overview.png", dpi=180)
     plt.close(fig)
     (OUT / "metrics.json").write_text(

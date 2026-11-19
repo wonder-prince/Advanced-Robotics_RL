@@ -38,5 +38,164 @@
         "value": 25.07438087463379
       }
     ]
+  },
+  "pyramids-gpu-1m": {
+    "behavior": "Pyramids",
+    "target_steps": 1000000,
+    "reported_steps": 990000,
+    "final_mean_reward": 1.0404422283172607,
+    "checkpoint_steps": 1000050,
+    "checkpoint_reward": 1.281499973187844,
+    "onnx_sha256": "11bb08590817d232edb7070ca9630963d0978af0152eead72f1c27ca02722451",
+    "reward_tag": "Environment/Cumulative Reward",
+    "all_tags": [
+      "Policy/Entropy",
+      "Policy/Extrinsic Value Estimate",
+      "Policy/Rnd Value Estimate",
+      "Losses/Policy Loss",
+      "Losses/Value Loss",
+      "Policy/Learning Rate",
+      "Policy/Epsilon",
+      "Policy/Beta",
+      "Losses/RND Loss",
+      "Environment/Episode Length",
+      "Environment/Cumulative Reward",
+      "Policy/Extrinsic Reward",
+      "Policy/Rnd Reward"
+    ],
+    "reward_history": [
+      {
+        "step": 30000,
+        "value": -1.0
+      },
+      {
+        "step": 60000,
+        "value": -1.0
+      },
+      {
+        "step": 90000,
+        "value": -1.0
+      },
+      {
+        "step": 120000,
+        "value": -0.6927059292793274
+      },
+      {
+        "step": 150000,
+        "value": -0.999962568283081
+      },
+      {
+        "step": 180000,
+        "value": -0.9306812882423401
+      },
+      {
+        "step": 210000,
+        "value": -0.7725879549980164
+      },
+      {
+        "step": 240000,
+        "value": -0.7678500413894653
+      },
+      {
+        "step": 270000,
+        "value": -0.7231084108352661
+      },
+      {
+        "step": 300000,
+        "value": -0.8476125597953796
+      },
+      {
+        "step": 330000,
+        "value": -0.84742671251297
+      },
+      {
+        "step": 360000,
+        "value": -0.634362518787384
+      },
+      {
+        "step": 390000,
+        "value": -0.7119941711425781
+      },
+      {
+        "step": 420000,
+        "value": -0.6314125657081604
+      },
+      {
+        "step": 450000,
+        "value": -0.40507277846336365
+      },
+      {
+        "step": 480000,
+        "value": -0.6385375261306763
+      },
+      {
+        "step": 510000,
+        "value": -0.3200000524520874
+      },
+      {
+        "step": 540000,
+        "value": -0.2294629067182541
+      },
+      {
+        "step": 570000,
+        "value": 0.18986661732196808
+      },
+      {
+        "step": 600000,
+        "value": 0.05357218161225319
+      },
+      {
+        "step": 630000,
+        "value": 0.4029499590396881
+      },
+      {
+        "step": 660000,
+        "value": 0.43116995692253113
+      },
+      {
+        "step": 690000,
+        "value": 0.3813949525356293
+      },
+      {
+        "step": 720000,
+        "value": 0.3692048490047455
+      },
+      {
+        "step": 750000,
+        "value": 0.28931790590286255
+      },
+      {
+        "step": 780000,
+        "value": 0.49354416131973267
+      },
+      {
+        "step": 810000,
+        "value": 0.7331244349479675
+      },
+      {
+        "step": 840000,
+        "value": 1.149999976158142
+      },
+      {
+        "step": 870000,
+        "value": 1.0882799625396729
+      },
+      {
+        "step": 900000,
+        "value": 1.194166660308838
+      },
+      {
+        "step": 930000,
+        "value": 1.203507423400879
+      },
+      {
+        "step": 960000,
+        "value": 1.2243456840515137
+      },
+      {
+        "step": 990000,
+        "value": 1.0404422283172607
+      }
+    ]
   }
 }
