@@ -1,3 +1,2 @@
-weights/
-.pytest_cache/
-*.part
+/builds/
+/results/

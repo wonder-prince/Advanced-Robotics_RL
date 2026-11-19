@@ -1,0 +1,7 @@
+*
+!.python-version
+!pyproject.toml
+!uv.lock
+!train.py
+!config/
+!config/**

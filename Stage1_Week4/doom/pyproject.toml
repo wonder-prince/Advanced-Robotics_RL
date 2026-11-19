@@ -5,6 +5,7 @@ description = "机器人进阶 Stage1：ViZDoom Health Gathering Supreme"
 requires-python = ">=3.11,<3.12"
 dependencies = [
     "sample-factory[vizdoom]==2.1.1",
+    "imageio-ffmpeg>=0.6,<0.7",
 ]
 
 [tool.uv]

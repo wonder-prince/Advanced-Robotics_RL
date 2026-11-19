@@ -1,4 +1,4 @@
-"""Focused regressions for the Week8 inference path."""
+"""Focused regressions for the Week9 inference path."""
 
 import numpy as np
 import pytest

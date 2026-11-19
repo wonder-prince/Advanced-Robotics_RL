@@ -23,11 +23,11 @@ RND 的 `rnd_bonus_normalization` 支持 `none`、`mean_std` 和 `zfilter`，对
 
 ```bash
 python cs285/scripts/run_hw5_explore.py \
-  --cfg experiments/exploration/pointmass_hard_random.yaml \
+  --config_file experiments/exploration/pointmass_hard_random.yaml \
   --dataset_dir datasets
 
 python cs285/scripts/run_hw5_explore.py \
-  --cfg experiments/exploration/pointmass_hard_rnd.yaml \
+  --config_file experiments/exploration/pointmass_hard_rnd.yaml \
   --dataset_dir datasets
 ```
 
@@ -35,7 +35,7 @@ python cs285/scripts/run_hw5_explore.py \
 
 ```bash
 python cs285/scripts/run_hw5_explore.py \
-  --cfg experiments/exploration/pointmass_hard_rnd.yaml --dataset_dir datasets \
+  --config_file experiments/exploration/pointmass_hard_rnd.yaml --dataset_dir datasets \
   --set rnd_bonus_normalization=none --set total_steps=20000 \
   --set dataset_name=pointmass_hard_rnd_20k_none
 ```
@@ -46,22 +46,22 @@ python cs285/scripts/run_hw5_explore.py \
 
 ```bash
 python cs285/scripts/run_hw5_offline.py \
-  --cfg experiments/offline/pointmass_hard_dqn.yaml --dataset_dir datasets
+  --config_file experiments/offline/pointmass_hard_dqn.yaml --dataset_dir datasets
 python cs285/scripts/run_hw5_offline.py \
-  --cfg experiments/offline/pointmass_hard_cql.yaml --dataset_dir datasets
+  --config_file experiments/offline/pointmass_hard_cql.yaml --dataset_dir datasets
 python cs285/scripts/run_hw5_offline.py \
-  --cfg experiments/offline/pointmass_hard_awac.yaml --dataset_dir datasets
+  --config_file experiments/offline/pointmass_hard_awac.yaml --dataset_dir datasets
 python cs285/scripts/run_hw5_offline.py \
-  --cfg experiments/offline/pointmass_hard_iql.yaml --dataset_dir datasets
+  --config_file experiments/offline/pointmass_hard_iql.yaml --dataset_dir datasets
 ```
 
-若使用上面另存的数据集，在命令末尾加 `--set dataset_name=pointmass_hard_rnd_20k_none`。CQL α 消融可加 `--set cql_alpha=0.2` 等；`α=0` 对应无 CQL 惩罚的消融。离线训练会保存 `data/<实验目录>/final_agent.pt`。PPT 中的曲线和性能表是课件结果，本目录没有生成新的实验结果。
+若使用上面另存的数据集，在命令末尾加 `--set dataset_name=pointmass_hard_rnd_20k_none`。CQL α 消融可加 `--set cql_alpha=0.2` 等；`α=0` 对应无 CQL 惩罚的消融。离线训练会保存 `data/<实验目录>/final_agent.pt`。本机的完整配置运行日志位于 `outputs/course/`。
 
 ### 3. 离线预训练后在线微调
 
 ```bash
 python cs285/scripts/run_hw5_finetune.py \
-  --cfg experiments/finetuning/pointmass_hard_cql_finetune.yaml \
+  --config_file experiments/finetuning/pointmass_hard_cql_finetune.yaml \
   --dataset_dir datasets
 ```
 
@@ -71,4 +71,4 @@ python cs285/scripts/run_hw5_finetune.py \
 
 - 离线训练与微调读取本目录探索脚本生成的 `datasets/*.pkl`；PPT 没有附上这些数据，因此没有伪造数据文件。
 - `datasets/`、实验日志、覆盖图和权重已在 `Week6/.gitignore` 排除。
-- 当前 uv 环境使用 Python 3.10；已验证依赖导入、Pointmass 环境创建和缩短训练流程，完整课件训练效果尚未验证。
+- uv 环境使用 Python 3.10。Apple Silicon macOS 已生成 Easy、Medium、Hard 的六份 Random/RND 探索数据。仓库内的 12 组离线配置和 4 组在线微调配置均已跑完并保存权重，运行日志位于 `outputs/course/`。NVIDIA GPU 环境见[仓库根目录说明](../README.md#linux--wsl-2-上的-nvidia-gpu)。

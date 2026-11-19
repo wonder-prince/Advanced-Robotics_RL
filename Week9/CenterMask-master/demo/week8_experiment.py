@@ -1,4 +1,4 @@
-"""Run the Week8 pretrained CenterMask demo and confidence-threshold experiment."""
+"""Run the Week9 pretrained CenterMask demo and confidence-threshold experiment."""
 
 import argparse
 from collections import Counter
@@ -16,7 +16,7 @@ import sys
 from time import perf_counter
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-WEEK8_ROOT = PROJECT_ROOT.parent
+WEEK9_ROOT = PROJECT_ROOT.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 import cv2
@@ -58,9 +58,9 @@ def parse_args(argv=None):
         "--config-file", type=Path,
         default=PROJECT_ROOT / "configs/centermask/centermask_M_v2_FPN_lite_res600_ms_bs32_1x.yaml",
     )
-    parser.add_argument("--weights", type=Path, default=WEEK8_ROOT / "weights/centermask-lite-M-v2-ms-bs32-1x.pth")
+    parser.add_argument("--weights", type=Path, default=WEEK9_ROOT / "weights/centermask-lite-M-v2-ms-bs32-1x.pth")
     parser.add_argument("--input", type=Path, default=PROJECT_ROOT / "demo/images")
-    parser.add_argument("--output_dir", "--output-dir", type=Path, default=WEEK8_ROOT / "results/experiment")
+    parser.add_argument("--output_dir", "--output-dir", type=Path, default=WEEK9_ROOT / "results/experiment")
     thresholds = parser.add_mutually_exclusive_group()
     thresholds.add_argument("--conf_th", type=probability, help="run a single confidence threshold")
     thresholds.add_argument("--thresholds", type=probability, nargs="+", help="default: 0.1 0.5 0.9")
@@ -138,12 +138,12 @@ def write_gallery(output_dir, rows, metadata, log):
             + '</p></article>'
         )
     text = '''<!doctype html><html lang="zh-CN"><meta charset="utf-8">
-<title>Week8 CenterMask 实验结果</title><style>
+<title>Week9 CenterMask 实验结果</title><style>
 body{margin:32px;background:#f4f6fa;color:#17243a;font:16px system-ui}
 h1{font-size:28px}pre{padding:20px;background:#152238;color:#d8f3e8;white-space:pre-wrap;word-break:break-all;border-radius:8px}
 section{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 article{margin:0;background:white;padding:10px;border-radius:8px}img{width:100%}p{font-size:13px}
-</style><h1>Week8 · CenterMask 实例分割与阈值实验</h1>
+</style><h1>Week9 · CenterMask 实例分割与阈值实验</h1>
 <p>原始 CenterMask-Lite / MobileNetV2；以下命令与耗时来自本次真实运行日志。</p>'''
     text += '<pre>' + html.escape(log) + '</pre><section>' + ''.join(cards) + '</section>'
     text += '<p>' + html.escape(f'Checkpoint SHA256: {metadata["checkpoint_sha256"]}') + '</p></html>'
@@ -159,7 +159,7 @@ def check_finite_head_outputs(module, inputs, outputs):
 
 def run(args):
     if not args.weights.is_file():
-        raise FileNotFoundError(f"Checkpoint missing: {args.weights}. Run Week8/download_weights.py first.")
+        raise FileNotFoundError(f"Checkpoint missing: {args.weights}. Run Week9/download_weights.py first.")
     if args.device == "cuda" and not torch.cuda.is_available():
         raise ValueError("CUDA was requested but is unavailable; use --device cpu")
     paths = find_images(args.input, args.limit)

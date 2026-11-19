@@ -1,6 +1,6 @@
 # Week 3：深度强化学习原理实践
 
-依据《第3周-深度强化学习原理实践.pptx》整理。四段练习均保留课件中的环境、算法和主要超参数，代码按当前 Gymnasium 接口写成可独立使用的脚本。本次只创建文件；**没有创建 uv 环境、安装依赖或运行训练与评估**。
+依据《第3周-深度强化学习原理实践.pptx》整理。四段练习均保留课件中的环境、算法和主要超参数，代码按当前 Gymnasium 接口写成可独立使用的脚本。Apple Silicon macOS 上已完成 CartPole、FlappyBird、FrozenLake 和 Taxi 的课件训练及评估，日志保存在 `outputs/course/`。四项的平均评估回报分别为 498.50、−0.94、1.00 和 7.32。
 
 ## 文件与课件对应
 
@@ -13,7 +13,7 @@
 
 ## uv 环境
 
-在 `Week3` 目录执行。`.python-version` 选择 Python 3.11，`pyproject.toml` 按实验拆分可选依赖，避免只做 FrozenLake 时安装 PyTorch、Panda 和 Atari 依赖。以下均为**以后需要运行时**的命令，本次没有执行。
+在 `Week3` 目录执行。`.python-version` 选择 Python 3.11，`pyproject.toml` 按实验拆分可选依赖，避免只做 FrozenLake 时安装 PyTorch、Panda 和 Atari 依赖。无需外部数据集或 VS Code 插件；Panda Gym 会随依赖提供仿真环境。
 
 ```bash
 cd Week3
@@ -24,7 +24,7 @@ uv sync --extra panda           # Panda A2C
 uv sync --extra atari           # Atari DQN
 ```
 
-需要多组依赖时，可以在同一次 `uv sync` 中重复 `--extra`。下面的 `uv run --extra ...` 会按对应依赖组同步环境；如果已经手工 `uv sync`，也可以使用 `uv run --no-sync ...`。
+需要多组依赖时，可以在同一次 `uv sync` 中重复 `--extra`。下面的 `uv run --extra ...` 会按对应依赖组同步环境；如果已经手工 `uv sync`，也可以使用 `uv run --no-sync ...`。在 Apple Silicon macOS 上，PyBullet 3.2.7 需要从源码构建；若出现 `zutil.h` 中 `fdopen` 宏与系统 `stdio.h` 冲突，可用 `CFLAGS='-include stdio.h' uv sync --extra panda` 安装。
 
 ## 1. REINFORCE：CartPole 与 FlappyBird
 
@@ -54,7 +54,7 @@ uv run --extra panda python panda_a2c.py train
 uv run --extra panda python panda_a2c.py evaluate
 ```
 
-输出位于 `outputs/panda_a2c/model.zip` 和 `outputs/panda_a2c/vecnormalize.pkl`。可用 `--timesteps`、`--episodes`、`--seed`、`--output-dir` 调整。
+输出位于 `outputs/panda_a2c/model.zip` 和 `outputs/panda_a2c/vecnormalize.pkl`。可用 `--timesteps`、`--episodes`、`--seed`、`--output-dir` 调整。Apple Silicon macOS 已完成 1,000,000 步训练，10 回合评估回报为 `-0.19 ± 0.08`，日志见 `outputs/course/panda-eval.log`。
 
 ## 3. Q-Learning：FrozenLake 与 Taxi
 
@@ -107,4 +107,4 @@ Zoo 会通过 `ale-py` 注册 Atari 环境；`logs/` 是它自己的模型与日
 - Q-Learning 的终止状态不继续 bootstrap；保存 Q 表后可单独评估。
 - DQN 使用当前 RL Zoo 的 `--conf-file` 参数。当前 [RL Zoo 的 Atari 配置](https://github.com/DLR-RM/rl-baselines3-zoo/blob/master/hyperparams/dqn.yml) 也采用 AtariWrapper 与 4 帧堆叠。
 
-依赖接口参照：[FlappyBird Gymnasium](https://github.com/markub3327/flappy-bird-gymnasium)、[Panda Gym 环境列表](https://github.com/qgallouedec/panda-gym/blob/master/docs/usage/environments.rst)、[RL Baselines3 Zoo 训练入口](https://github.com/DLR-RM/rl-baselines3-zoo/blob/master/rl_zoo3/train.py)、[ALE 环境说明](https://ale.farama.org/environments/)。FlappyBird 包的现行奖励规则可能与课件描述不同，训练表现也会受包版本和随机种子影响。由于按要求没有安装或运行，本项目还没有实际运行结果。
+依赖接口参照：[FlappyBird Gymnasium](https://github.com/markub3327/flappy-bird-gymnasium)、[Panda Gym 环境列表](https://github.com/qgallouedec/panda-gym/blob/master/docs/usage/environments.rst)、[RL Baselines3 Zoo 训练入口](https://github.com/DLR-RM/rl-baselines3-zoo/blob/master/rl_zoo3/train.py)、[ALE 环境说明](https://ale.farama.org/environments/)。FlappyBird 包的现行奖励规则可能与课件描述不同，训练表现也会受包版本和随机种子影响。本机 Atari CPU 运行已提前结束，途中保存的 `best_model.zip` 可用于评估。正式 CUDA 运行命令见[仓库根目录说明](../README.md#linux--wsl-2-上的-nvidia-gpu)。

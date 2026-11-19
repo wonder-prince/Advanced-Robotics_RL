@@ -1,4 +1,4 @@
-# Stage1：强化学习进阶实践
+# Week4：强化学习进阶实践
 
 按《强化学习进阶实践内容(终).pptx》的 37 页内容整理为两个独立项目：
 
@@ -7,7 +7,7 @@
 | 月球着陆器 | [`lunar_lander/`](./lunar_lander/) | 从零实现离散动作 PPO：Actor/Critic、并行采样、GAE、裁剪损失、评估和视频 |
 | Doom 生存小游戏 | [`doom/`](./doom/) | 使用 Sample Factory 的 ViZDoom 场景集成：PPO 参数、卷积编码器、并行采样、评估和视频 |
 
-两个项目各有自己的 `pyproject.toml` 和 uv 环境。这样可以隔离 Sample Factory 2.1.1 所需的旧版 Gymnasium，避免和 LunarLander 的新版 Gymnasium 依赖冲突。本次没有安装依赖，也没有启动训练；下列命令供后续使用。
+两个项目各有自己的 `pyproject.toml` 和 uv 环境。这样可以隔离 Sample Factory 2.1.1 所需的旧版 Gymnasium，避免和 LunarLander 的新版 Gymnasium 依赖冲突。在各自目录执行 `uv sync --locked` 安装依赖。
 
 ## 1. LunarLander：PPO 月球着陆
 
@@ -26,7 +26,7 @@
 训练时按 Gymnasium 的 `terminated` 和 `truncated` 分开处理。遇到时间截断，会在重置前对最终状态做价值 bootstrap；真正终止则不做。评估使用独立环境和确定性动作。
 
 ```bash
-cd Stage1/lunar_lander
+cd Stage1_Week4/lunar_lander
 uv sync
 uv run python ppo.py inspect
 uv run python ppo.py train --total-timesteps 500000
@@ -57,7 +57,7 @@ uv run tensorboard --logdir outputs/tensorboard
 像素先除以 255，禁用额外的输入统计归一化；共享编码器，不启用 RNN。配置 `γ=0.99`、`λ=0.95`、策略裁剪系数 `0.2`、价值裁剪 `0.2`、价值损失权重 `0.5`、熵探索权重 `0.01`、Adam 学习率 `1e-4`。
 
 ```bash
-cd Stage1/doom
+cd Stage1_Week4/doom
 uv sync
 uv run python train.py --dry-run       # 只打印将调用的 Sample Factory 命令
 uv run python train.py                 # 完整训练，计算量很大
@@ -79,4 +79,6 @@ uv run tensorboard --logdir train_dir
 | `ppo_clip_ratio=0.2` 画成严格 `[0.8,1.2]` | Sample Factory 的具体裁剪实现与课件简化公式稍有不同；月球着陆器脚本则按 `[0.8,1.2]` 实现。 |
 | `train.py`、`evaluate.py` 直接调用框架函数 | 这里封装官方 `sf_examples.vizdoom` 训练和评估入口，保留框架的环境注册与检查点处理。 |
 
-两个项目没有共享模型权重，Week1 的已训练模型也不直接用于此处。由于没有训练，本目录尚无得分、视频或模型检查点。
+两个项目没有共享模型权重，Week1 的已训练模型也不直接用于此处。完整训练会生成模型检查点，评估和录制依赖这些检查点。
+
+Apple Silicon macOS 上的 `course_full` 训练已收集 4,063,232 帧，耗时约 67 分钟。10 局评估的平均回报为 25.297，平均原始环境奖励为 11.097。评估和回放分别保存在 `doom/train_dir/course-full-evaluate.log` 和 `doom/train_dir/course_full/replay.mp4`。

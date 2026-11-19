@@ -1,0 +1,3 @@
+weights/
+.pytest_cache/
+*.part

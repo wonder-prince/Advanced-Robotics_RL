@@ -29,4 +29,4 @@ python cs285/scripts/run_hw4.py --config_file experiments/mpc/halfcheetah_mbpo.y
 python cs285/scripts/run_hw4.py --config_file experiments/mpc/halfcheetah_mbpo.yaml --sac_config_file experiments/sac/halfcheetah_model_free.yaml
 ```
 
-当前 uv 环境已按 `pyproject.toml` 和 `uv.lock` 同步，缩短训练已生成日志和曲线到 `Week7/data/`，可提交的结果见 [实验报告](../results/week5-7/README.md)。
+Apple Silicon macOS 已完成 Obstacles 单轮和多轮、HalfCheetah 初始动力学训练、Reacher 多轮和默认消融，以及三组 HalfCheetah SAC 对照。短 rollout MBPO、长 rollout MBPO 和无模型 SAC 的最终平均评估回报分别为 572.79、703.88 和 626.34。正式运行日志位于 `outputs/course/`，模型位于 `data/`。HalfCheetah 多轮随机 MPC 和 CEM 的完整配置留待 GPU 运行，安装和命令见[仓库根目录说明](../README.md#linux--wsl-2-上的-nvidia-gpu)。

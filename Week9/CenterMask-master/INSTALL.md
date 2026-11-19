@@ -1,6 +1,6 @@
 ## Installation
 
-For the Week8 inference experiment on modern Python/PyTorch (including macOS arm64 CPU), use the pinned environment and instructions in [Week8 README](../README.md). Its torchvision fallback covers non-DCN inference only; training still requires the original native operators. The historical CUDA build instructions are retained below.
+For the Week9 inference experiment on modern Python/PyTorch (including macOS arm64 CPU), use the pinned environment and instructions in [Week9 README](../README.md). Its torchvision fallback covers non-DCN inference only; training still requires the original native operators. The historical CUDA build instructions are retained below.
 
 ### Requirements:
 - PyTorch >= 1.0. Installation instructions can be found in https://pytorch.org/get-started/locally/.

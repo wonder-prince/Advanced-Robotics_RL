@@ -9,7 +9,7 @@ cd Week2
 uv sync
 ```
 
-`uv` 会依据 `.python-version` 使用 Python 3.11，并在 `Week2/.venv` 创建虚拟环境。项目依赖写在 `pyproject.toml`；无需 conda，也无需手工安装 PyTorch。`uv sync` 第一次运行需要下载依赖。
+`uv` 会依据 `.python-version` 使用 Python 3.11，并在 `Week2/.venv` 创建虚拟环境。x86-64 Windows 和 Linux 使用 CUDA 12.1 的 PyTorch 构建，macOS 使用原生构建。`uv sync` 第一次运行需要下载依赖。
 
 ## 按 PPT 顺序复现
 

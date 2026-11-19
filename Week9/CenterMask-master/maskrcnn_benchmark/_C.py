@@ -1,7 +1,7 @@
 """Inference fallback when the original C++/CUDA extension is not installed.
 
 Python prefers a compiled _C extension over this module when one is present.
-The Week8 non-DCN CenterMask demo needs NMS and ROIAlign forward only.
+The Week9 non-DCN CenterMask demo needs NMS and ROIAlign forward only.
 Training and deformable operators still require the original native extension.
 """
 
@@ -41,6 +41,6 @@ def roi_align_forward(features, rois, spatial_scale, height, width, sampling_rat
 
 def roi_align_backward(*args):
     raise RuntimeError(
-        "The Week8 torchvision fallback supports inference only. "
+        "The Week9 torchvision fallback supports inference only. "
         "Build the original C++/CUDA extension for training."
     )

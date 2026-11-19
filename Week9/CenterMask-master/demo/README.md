@@ -1,6 +1,6 @@
-## Week8 image inference and threshold experiment
+## Week9 image inference and threshold experiment
 
-See the [Week8 deployment and experiment report](../../README.md) for the verified environment, pretrained checkpoint download, and saved results. From the `Week8` directory:
+See the [Week9 deployment and experiment report](../../README.md) for the verified environment, pretrained checkpoint download, and saved results. From the `Week9` directory:
 
 ```bash
 uv run --frozen CenterMask-master/demo/week8_experiment.py --thresholds 0.1 0.5 0.9 --limit 3 --device cpu --warmup 1 --repeats 3

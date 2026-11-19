@@ -1,6 +1,6 @@
 # [CenterMask](https://arxiv.org/abs/1911.06667) : Real-Time Anchor-Free Instance Segmentation
 
-> Week8 本地部署、预训练推理、0.1/0.5/0.9 阈值实验及实测结果，参见 [Week8 实验说明](../README.md)。该流程已在 macOS arm64 / Python 3.11 / PyTorch 2.5 的 CPU 环境验证。
+> Week9 本地部署、预训练推理、0.1/0.5/0.9 阈值实验及实测结果，参见 [Week9 实验说明](../README.md)。该流程已在 macOS arm64 / Python 3.11 / PyTorch 2.5 的 CPU 环境验证。
 
 
 ![architecture](figures/architecture.png)

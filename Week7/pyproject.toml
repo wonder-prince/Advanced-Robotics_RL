@@ -4,12 +4,14 @@ version = "0.1.0"
 description = "第 7 周基于模型的强化学习实践：动力学模型集成、MPC/CEM、MBPO/SAC"
 requires-python = ">=3.10,<3.11"
 dependencies = [
-    # 课件版本；mujoco 2.2.0 没有 cp311 的 Windows wheel，因此锁定 Python 3.10。
+    # MuJoCo 2.2.2 提供 Windows 与 Apple Silicon 的 Python 3.10 wheel。
     "gym==0.25.2",
-    "mujoco==2.2.0",
+    "mujoco==2.2.2",
     # gym 0.25.2 使用了 numpy 1.24 中被移除的 np.bool8，必须锁在 1.23.x。
     "numpy==1.23.5",
-    "torch==2.5.1+cu121",
+    "torch==2.5.1+cu121; sys_platform == 'win32'",
+    "torch==2.5.1; sys_platform == 'darwin'",
+    "torch==2.7.1+cu128; sys_platform == 'linux' and platform_machine == 'x86_64'",
     "tensorboardX==2.5.1",
     "matplotlib==3.7.5",
     "pillow<10",
@@ -26,10 +28,21 @@ name = "pytorch-cu121"
 url = "https://download.pytorch.org/whl/cu121"
 explicit = true
 
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
 [tool.uv.sources]
-torch = { index = "pytorch-cu121" }
+torch = [
+    { index = "pytorch-cu121", marker = "sys_platform == 'win32'" },
+    { index = "pytorch-cu128", marker = "sys_platform == 'linux' and platform_machine == 'x86_64'" },
+]
 
 [tool.uv]
 package = false
-# cu121 索引只提供 Windows / Linux 的 torch wheel，限定解析平台避免拉取失败。
-environments = ["sys_platform == 'win32'"]
+environments = [
+    "sys_platform == 'win32'",
+    "sys_platform == 'darwin' and platform_machine == 'arm64'",
+    "sys_platform == 'linux' and platform_machine == 'x86_64'",
+]

@@ -122,7 +122,9 @@ class SoftActorCritic(nn.Module):
         distribution = self.actor(obs)
         actor_terms = []
         if self.actor_gradient_type == "reparametrize":
-            for sample in distribution.rsample((self.num_actor_samples,)):
+            for _ in range(self.num_actor_samples):
+                # Keep the sampled tensor intact so TanhTransform can reuse its cached inverse.
+                sample = distribution.rsample()
                 q_value = self.critic(obs, sample).min(dim=0).values
                 entropy_term = self.temperature * distribution.log_prob(sample) if self.use_entropy_bonus else 0
                 actor_terms.append((entropy_term - q_value).mean())
