@@ -78,11 +78,14 @@ fi
 export PATH="$HOME/.local/bin:$PATH"
 export UV_CACHE_DIR="${UV_CACHE_DIR:-${XDG_CACHE_HOME:-$HOME/.cache}/uv}"
 if ! command -v uv >/dev/null; then
-  curl -fsSL --retry 3 https://astral.sh/uv/0.8.16/install.sh -o "$scratch/install-uv.sh"
-  UV_UNMANAGED_INSTALL="$HOME/.local/bin" sh "$scratch/install-uv.sh"
+  python3 -m pip install --index-url https://mirrors.aliyun.com/pypi/simple 'uv==0.8.16'
 fi
-uv python install 3.10.12
-uv sync --locked
+if [[ $(python3 -c 'import platform; print(platform.python_version())') == 3.10.12 ]]; then
+  uv sync --locked --python "$(command -v python3)"
+else
+  uv python install 3.10.12
+  uv sync --locked
+fi
 for player in builds/linux/{SnowballTarget,SoccerTwos}/UnityPlayer.so builds/linux/Pyramids/UnityPlayer.so; do
   dependencies=$(ldd "$player")
   if [[ $dependencies == *'not found'* ]]; then

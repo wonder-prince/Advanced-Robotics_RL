@@ -1,0 +1,42 @@
+{
+  "snowball-gpu-200k": {
+    "behavior": "SnowballTarget",
+    "target_steps": 200000,
+    "reported_steps": 200000,
+    "final_mean_reward": 25.07438087463379,
+    "checkpoint_steps": 200112,
+    "checkpoint_reward": 25.818181818181817,
+    "onnx_sha256": "7a93abfcc22750b6abda7f525682a44bac05f3bed4114e001381648333233ed6",
+    "reward_tag": "Environment/Cumulative Reward",
+    "all_tags": [
+      "Policy/Entropy",
+      "Policy/Extrinsic Value Estimate",
+      "Losses/Policy Loss",
+      "Losses/Value Loss",
+      "Policy/Learning Rate",
+      "Policy/Epsilon",
+      "Policy/Beta",
+      "Environment/Episode Length",
+      "Environment/Cumulative Reward",
+      "Policy/Extrinsic Reward"
+    ],
+    "reward_history": [
+      {
+        "step": 50000,
+        "value": 9.5
+      },
+      {
+        "step": 100000,
+        "value": 19.498023986816406
+      },
+      {
+        "step": 150000,
+        "value": 24.363636016845703
+      },
+      {
+        "step": 200000,
+        "value": 25.07438087463379
+      }
+    ]
+  }
+}

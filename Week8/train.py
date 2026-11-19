@@ -25,6 +25,7 @@ def main() -> None:
     parser.add_argument("--base-port", type=int, default=5005)
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--graphics", action="store_true")
+    parser.add_argument("--torch-device", choices=("cpu", "cuda"), default="cpu")
     args = parser.parse_args()
 
     cli = [str(ROOT / "config" / CONFIGS[args.experiment])]
@@ -38,7 +39,7 @@ def main() -> None:
         cli.extend([
             "--env", str(args.env.resolve()), "--run-id", args.run_id,
             "--num-envs", str(args.num_envs), "--base-port", str(args.base_port),
-            "--results-dir", str(ROOT / "results"), "--torch-device", "cpu",
+            "--results-dir", str(ROOT / "results"), "--torch-device", args.torch_device,
         ])
         if not args.graphics:
             cli.append("--no-graphics")

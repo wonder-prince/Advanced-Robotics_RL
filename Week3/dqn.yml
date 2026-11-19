@@ -1,5 +1,5 @@
 # 课件中的 Space Invaders DQN 配置；交给 RL Baselines3 Zoo 读取。
-SpaceInvadersNoFrameskip-v4:
+ALE/SpaceInvaders-v5:
   env_wrapper:
     - stable_baselines3.common.atari_wrappers.AtariWrapper
   frame_stack: 4

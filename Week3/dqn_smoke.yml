@@ -1,5 +1,5 @@
 # 课件的短程配置：仅供将来检查流程，不能代表训练效果。
-SpaceInvadersNoFrameskip-v4:
+ALE/SpaceInvaders-v5:
   env_wrapper:
     - stable_baselines3.common.atari_wrappers.AtariWrapper
   frame_stack: 4

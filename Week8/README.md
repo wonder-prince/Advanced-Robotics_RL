@@ -17,11 +17,11 @@ cd ~/Week8
 bash setup-wsl.sh
 ```
 
-脚本会安装 Unity 系统依赖，校验并解压三个 Unity 构建，创建 Python 3.10.12 的 CPU 环境并检查训练器。已有下载会复用。首次安装 Python 与依赖需要联网，安装系统包需要 sudo。配置成功后，在同一目录运行短训：
+脚本会安装 Unity 系统依赖，校验并解压三个 Unity 构建，创建 Python 3.10.12 的 CUDA 环境并检查训练器。Python 包和 uv 使用阿里云镜像。已有下载会复用。首次安装 Python 与依赖需要联网，安装系统包需要 sudo。配置成功后，在同一目录运行短训：
 
 ```bash
-.venv/bin/python train.py snowball --env builds/linux/SnowballTarget/SnowballTarget.x86_64 --run-id snowball-wsl-smoke --smoke
-.venv/bin/python train.py pyramids --env builds/linux/Pyramids/Pyramids --run-id pyramids-wsl-smoke --smoke
+.venv/bin/python train.py snowball --env builds/linux/SnowballTarget/SnowballTarget.x86_64 --run-id snowball-wsl-smoke --smoke --torch-device cuda
+.venv/bin/python train.py pyramids --env builds/linux/Pyramids/Pyramids --run-id pyramids-wsl-smoke --smoke --torch-device cuda
 ```
 
 日志出现 `Connected to Unity environment` 且训练步数持续增长表示连通。若重跑，换一个 `--run-id`。
@@ -70,9 +70,9 @@ chmod +x builds/linux/SoccerTwos/SoccerTwos.x86_64
 在 Linux x86-64 环境中执行以下命令。`--smoke` 将训练目标设为 20,000 步，并每 2,000 步打印进度。已提交的采样批次可能让最终检查点略超目标步数。正式训练时去掉 `--smoke` 并换一个 `--run-id`。运行多个实验时，使用不同 `--base-port`。
 
 ```bash
-uv run --locked train.py snowball --env builds/linux/SnowballTarget/SnowballTarget.x86_64 --run-id snowball-smoke --smoke
-uv run --locked train.py pyramids --env builds/linux/Pyramids/Pyramids --run-id pyramids-smoke --smoke
-uv run --locked train.py soccer --env builds/linux/SoccerTwos/SoccerTwos.x86_64 --run-id soccer-smoke --smoke
+uv run --locked train.py snowball --env builds/linux/SnowballTarget/SnowballTarget.x86_64 --run-id snowball-smoke --smoke --torch-device cuda
+uv run --locked train.py pyramids --env builds/linux/Pyramids/Pyramids --run-id pyramids-smoke --smoke --torch-device cuda
+uv run --locked train.py soccer --env builds/linux/SoccerTwos/SoccerTwos.x86_64 --run-id soccer-smoke --smoke --torch-device cuda
 uv run --locked tensorboard --logdir results
 ```
 

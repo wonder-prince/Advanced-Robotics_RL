@@ -51,10 +51,12 @@ bash setup-gpu.sh week3
 ```bash
 cd Week3
 uv run --no-sync python -m rl_zoo3.train \
-  --algo dqn --env SpaceInvadersNoFrameskip-v4 --conf-file dqn.yml \
+  --algo dqn --env ALE/SpaceInvaders-v5 --conf-file dqn.yml \
+  --gym-packages ale_py --env-kwargs frameskip:1 repeat_action_probability:0.0 \
   --device cuda --log-folder logs/course-gpu --save-freq 250000
 uv run --no-sync python -m rl_zoo3.enjoy \
-  --algo dqn --env SpaceInvadersNoFrameskip-v4 \
+  --algo dqn --env ALE/SpaceInvaders-v5 \
+  --gym-packages ale_py --env-kwargs frameskip:1 repeat_action_probability:0.0 \
   --folder logs/course-gpu --device cuda --no-render --n-timesteps 5000
 ```
 

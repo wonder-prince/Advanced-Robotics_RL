@@ -9,7 +9,7 @@
 | 策略梯度 | `reinforce.py` | CartPole-v1、FlappyBird-v0；REINFORCE |
 | Actor-Critic | `panda_a2c.py` | PandaReachDense-v3；Stable Baselines3 A2C |
 | 值函数表格法 | `q_learning.py` | FrozenLake-v1、Taxi-v3；Q-Learning |
-| 深度 Q 网络 | `dqn.yml`、`dqn_smoke.yml` | SpaceInvadersNoFrameskip-v4；RL Baselines3 Zoo DQN |
+| 深度 Q 网络 | `dqn.yml`、`dqn_smoke.yml` | ALE/SpaceInvaders-v5；RL Baselines3 Zoo DQN |
 
 ## uv 环境
 
@@ -83,17 +83,20 @@ uv run python q_learning.py evaluate --env taxi
 
 ```bash
 uv run --extra atari python -m rl_zoo3.train \
-  --algo dqn --env SpaceInvadersNoFrameskip-v4 \
+  --algo dqn --env ALE/SpaceInvaders-v5 --gym-packages ale_py \
+  --env-kwargs frameskip:1 repeat_action_probability:0.0 \
   --conf-file dqn.yml --log-folder logs/
 
 # 如需先检查命令链路，换用短程配置：
 uv run --extra atari python -m rl_zoo3.train \
-  --algo dqn --env SpaceInvadersNoFrameskip-v4 \
+  --algo dqn --env ALE/SpaceInvaders-v5 --gym-packages ale_py \
+  --env-kwargs frameskip:1 repeat_action_probability:0.0 \
   --conf-file dqn_smoke.yml --log-folder logs/
 
 # 训练完成后评估/回放：
 uv run --extra atari python -m rl_zoo3.enjoy \
-  --algo dqn --env SpaceInvadersNoFrameskip-v4 \
+  --algo dqn --env ALE/SpaceInvaders-v5 --gym-packages ale_py \
+  --env-kwargs frameskip:1 repeat_action_probability:0.0 \
   --folder logs/ --no-render --n-timesteps 5000
 ```
 
