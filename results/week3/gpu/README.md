@@ -1,10 +1,12 @@
-# Week3 Atari DQN GPU training snapshot
+# Week3 Atari DQN GPU training results
 
-The 10,000,000-step Space Invaders DQN run is still training on an RTX 4060 Laptop GPU. RL Baselines3 Zoo logged `Using cuda device`. The current ALE environment is `ALE/SpaceInvaders-v5` with one frame skip and zero sticky-action probability, matching the old `SpaceInvadersNoFrameskip-v4` behavior. The complete hyperparameters are in [dqn.yml](../../../Week3/dqn.yml).
+The Space Invaders DQN run completed 10,000,000 training steps on an RTX 4060 Laptop GPU. RL Baselines3 Zoo logged `Using cuda device`. The ALE environment is `ALE/SpaceInvaders-v5` with one frame skip and zero sticky-action probability; see [dqn.yml](../../../Week3/dqn.yml) for hyperparameters.
 
-At this snapshot, periodic five-episode evaluation had reached 750,000 training steps. The best mean evaluation reward was 780.0 at 750,000 steps. The [curve](./overview.png), [numeric summary](./metrics.json), [evaluation arrays](./evaluations.npz), and [best policy](./best_model.zip) are an **interim** result; no 10-million-step outcome is claimed.
+Periodic evaluation used five episodes per point. The highest mean reward was **1,581** at 3,675,000 steps; the final evaluation mean was **969** at 10,000,000 steps. The final policy is therefore different from the best evaluated policy. These are simulator evaluation scores, not a held-out benchmark.
 
-[build_results.py](./build_results.py) validates array shapes and finite rewards, checks the ZIP archive, and regenerates the plot. The copied policy was also loaded successfully with Stable Baselines3 `DQN.load(..., device="cpu")`, which reported 750,000 training steps. Refresh this snapshot after further training with:
+The [curve](./overview.png), [numeric summary](./metrics.json), and [evaluation arrays](./evaluations.npz) record the full run. Both the [best policy](./best_model.zip) and [final policy](./final_model.zip) passed ZIP integrity checks and loaded with Stable Baselines3 `DQN.load(..., device="cpu")`; their reported training steps are 3,675,000 and 10,000,000 respectively.
+
+[build_results.py](./build_results.py) validates the arrays and checkpoints, then regenerates the plot and metrics:
 
 ```bash
 uv run --project Week6 --frozen --no-sync --offline python results/week3/gpu/build_results.py

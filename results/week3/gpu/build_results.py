@@ -1,4 +1,4 @@
-"""Snapshot the in-progress Week 3 Atari DQN evaluation and best policy.
+"""Export the Week 3 Atari DQN evaluation and trained policies.
 
 Run from the repository root with:
     uv run --project Week6 --frozen --no-sync --offline python results/week3/gpu/build_results.py
@@ -44,16 +44,25 @@ def main() -> None:
     with zipfile.ZipFile(model) as archive:
         if bad_file := archive.testzip():
             raise ValueError(f"Corrupt checkpoint entry: {bad_file}")
+    final_source = SOURCE / "ALE-SpaceInvaders-v5.zip"
+    completed = final_source.is_file() and int(steps[-1]) >= 10_000_000
+    final_model = OUT / "final_model.zip"
+    if completed:
+        shutil.copy2(final_source, final_model)
+        with zipfile.ZipFile(final_model) as archive:
+            if bad_file := archive.testzip():
+                raise ValueError(f"Corrupt final checkpoint entry: {bad_file}")
     result = {
         "environment": "ALE/SpaceInvaders-v5",
         "target_train_steps": 10_000_000,
-        "status": "in_progress",
+        "status": "complete" if completed else "in_progress",
         "last_eval_step": int(steps[-1]),
         "eval_episodes_per_point": int(rewards.shape[1]),
         "best_eval_step": int(steps[best_index]),
         "best_eval_mean_reward": float(means[best_index]),
         "last_eval_mean_reward": float(means[-1]),
         "best_model_sha256": hashlib.sha256(model.read_bytes()).hexdigest(),
+        "final_model_sha256": hashlib.sha256(final_model.read_bytes()).hexdigest() if completed else None,
         "evaluations": [
             {"step": int(step), "mean_reward": float(mean), "std_reward": float(std)}
             for step, mean, std in zip(steps, means, stds)
@@ -62,9 +71,9 @@ def main() -> None:
     (OUT / "metrics.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
     fig, axis = plt.subplots(figsize=(7, 4.5), constrained_layout=True)
     axis.plot(steps, means, label="Mean of 5 eval episodes")
-    axis.fill_between(steps, means - stds, means + stds, alpha=0.2, label="±1 episode SD")
+    axis.fill_between(steps, means - stds, means + stds, alpha=0.2, label="1 episode SD")
     axis.set(
-        title="Atari Space Invaders DQN (CUDA, in progress)",
+        title=f"Atari Space Invaders DQN (CUDA, {result['status']})",
         xlabel="Training steps", ylabel="Evaluation reward",
     )
     axis.grid(alpha=0.3)

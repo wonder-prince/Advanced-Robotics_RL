@@ -70,5 +70,37 @@
       "sha256": "5b3468ef810b5358eb1528d9d94e9105a2f2e793458dbb7a35b6ada2a1533e05",
       "tensors": 22
     }
+  },
+  "cem_mpc": {
+    "source": "Week7/data/cheetah-cs285-v0_cheetah_cem_l2_h250_mpccem_horizon15_actionseq1000_cem_iters4_20-11-2026_01-23-21",
+    "eval_return": [
+      {
+        "step": 0,
+        "value": 177.04690551757812
+      },
+      {
+        "step": 1,
+        "value": 501.5571594238281
+      },
+      {
+        "step": 2,
+        "value": 857.57080078125
+      },
+      {
+        "step": 3,
+        "value": 919.6475830078125
+      },
+      {
+        "step": 4,
+        "value": 1028.640869140625
+      }
+    ],
+    "final_eval_return": 1028.640869140625,
+    "best_eval_return": 1028.640869140625,
+    "checkpoint": {
+      "file": "checkpoints/cem_mpc.pt",
+      "sha256": "64a29ddf459e300e2e026f48b7e72c0c8f73a487637f4a1a1b299bc6e238d3d5",
+      "tensors": 22
+    }
   }
 }

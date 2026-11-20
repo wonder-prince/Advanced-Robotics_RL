@@ -1,0 +1,66 @@
+{
+    "SoccerTwos": {
+        "checkpoints": [
+            {
+                "steps": 3499054,
+                "file_path": "/root/Week8/results/soccer-gpu-5m/SoccerTwos/SoccerTwos-3499054.onnx",
+                "reward": 0.0,
+                "creation_time": 1795114749.999886,
+                "auxillary_file_paths": [
+                    "/root/Week8/results/soccer-gpu-5m/SoccerTwos/SoccerTwos-3499054.pt"
+                ]
+            },
+            {
+                "steps": 3999594,
+                "file_path": "/root/Week8/results/soccer-gpu-5m/SoccerTwos/SoccerTwos-3999594.onnx",
+                "reward": 0.0,
+                "creation_time": 1795115529.2013304,
+                "auxillary_file_paths": [
+                    "/root/Week8/results/soccer-gpu-5m/SoccerTwos/SoccerTwos-3999594.pt"
+                ]
+            },
+            {
+                "steps": 4499904,
+                "file_path": "/root/Week8/results/soccer-gpu-5m/SoccerTwos/SoccerTwos-4499904.onnx",
+                "reward": 0.0,
+                "creation_time": 1795116323.1063643,
+                "auxillary_file_paths": [
+                    "/root/Week8/results/soccer-gpu-5m/SoccerTwos/SoccerTwos-4499904.pt"
+                ]
+            },
+            {
+                "steps": 4999444,
+                "file_path": "/root/Week8/results/soccer-gpu-5m/SoccerTwos/SoccerTwos-4999444.onnx",
+                "reward": 0.0,
+                "creation_time": 1795117095.9527268,
+                "auxillary_file_paths": [
+                    "/root/Week8/results/soccer-gpu-5m/SoccerTwos/SoccerTwos-4999444.pt"
+                ]
+            },
+            {
+                "steps": 5001444,
+                "file_path": "/root/Week8/results/soccer-gpu-5m/SoccerTwos/SoccerTwos-5001444.onnx",
+                "reward": 0.0,
+                "creation_time": 1795117096.1729944,
+                "auxillary_file_paths": [
+                    "/root/Week8/results/soccer-gpu-5m/SoccerTwos/SoccerTwos-5001444.pt"
+                ]
+            }
+        ],
+        "elo": 1185.5547897435383,
+        "final_checkpoint": {
+            "steps": 5001444,
+            "file_path": "/root/Week8/results/soccer-gpu-5m/SoccerTwos.onnx",
+            "reward": 0.0,
+            "creation_time": 1795117096.1729944,
+            "auxillary_file_paths": [
+                "/root/Week8/results/soccer-gpu-5m/SoccerTwos/SoccerTwos-5001444.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1+cu124"
+    }
+}

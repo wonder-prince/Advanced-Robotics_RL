@@ -72,7 +72,7 @@ def main() -> None:
             if behavior == "SoccerTwos"
             else "Environment/Cumulative Reward"
         )
-        if reward_tag is None:
+        if reward_tag not in history:
             raise RuntimeError(f"No cumulative reward in {run}: {list(history)}")
         points = history[reward_tag]
         status = json.loads((run / "run_logs" / "training_status.json").read_text(encoding="utf-8"))
